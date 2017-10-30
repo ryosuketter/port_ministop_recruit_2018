@@ -1,0 +1,476 @@
+.mrcrt-Wrapper {
+  background-color: $Bg;
+}
+
+@include min-screen($BREAK_POINT_TABLET) {
+  .mrcrt-Wrapper {
+    min-width: 1024px;
+  }
+}
+
+.mrcrt-Mv {
+  //領域全体を覆う
+  height: 578px;
+  background: url("../img/message/mrcrt-mv_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+
+  .mrcrt-Mv_Inner {
+    padding: 245px 15% 200px;
+
+    .mrcrt-Mv_Ttl {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .mrcrt-Mv_Subttl {
+      font-size: 24px;
+      font-weight: 600;
+      color: $Blue;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .mrcrt-Mv {
+    height: 378px;
+
+    .mrcrt-Mv_Inner {
+      padding: 145px 15% 50px;
+
+      .mrcrt-Mv_Ttl {
+        img {
+          width: 182px;
+        }
+      }
+
+      .mrcrt-Mv_Subttl {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .mrcrt-Mv {
+    height: 282px;
+
+    .mrcrt-Mv_Inner {
+      padding: 97px 15% 50px;
+    }
+  }
+}
+
+.mrcrt-Contents {
+  padding-bottom: 120px;
+
+  .mrcrt-Contents_Inner {
+    position: relative;
+    max-width: 1154px;
+    height: 1398px;
+    margin: 0 auto;
+
+    .mrcrt-Contents_TxtWrapper {
+      position: absolute;
+      top: -58px;
+      display: block;
+      width: 616px;
+      color: #fff;
+      background-color: $Blue;
+
+      .mrcrt-Contents_TxtInner {
+        padding: 131px 115px;
+
+        .mrcrt-Contents_Ttl {
+          margin-bottom: 40px;
+          font-size: 22px;
+
+          h2 {
+            position: relative;
+            font-weight: 100;
+
+            &:before {
+              position: absolute;
+              top: 22px;
+              left: -135px;
+              display: block;
+              width: 85px;
+              content: "";
+              border-top: 3px solid $Yellow;
+            }
+          }
+        }
+        .mrcrt-Contents_Body {
+          margin-bottom: 26px;
+          font-size: 15px;
+          line-height: 2.2;
+        }
+      }
+    }
+    .mrcrt-Contents_ImgWrapper {
+      position: absolute;
+      top: 0;
+      right: 30px;
+
+      .mrcrt-Contents_ImgTieWrapper {
+        position: relative;
+        padding-top: 228px;
+
+        img {
+          position: relative;
+          z-index: $Z_MESSAGE_IMG;
+        }
+        &:before {
+          position: absolute;
+          z-index: $Z_MESSAGE_YELLOW_UNDER_IMG;
+          right: -12%;
+          bottom: -30px;
+          display: block;
+          width: 104%;
+          height: 390px;
+          content: "";
+          background-color: $Yellow;
+        }
+      }
+    }
+    .mrcrt-Contents_MessageNextBlock {
+      position: absolute;
+      top: 742px;
+      left: 563px;
+      padding: 132px 115px;
+      background-color: #fff;
+
+      .mrcrt-MessageNextBlock_Body {
+        margin-bottom: 18px;
+        line-height: 2.5;
+        font-weight: 600;
+      }
+      .from {
+        font-weight: 600;
+        text-align: right;
+        color: $Blue;
+      }
+    }
+
+    .mrcrt-Contents_HrImgWrapper {
+      position: absolute;
+      top: 1098px;
+      left: 0;
+
+      img {
+        position: relative;
+        z-index: $Z_MESSAGE_IMG;
+      }
+
+      &:before {
+        position: absolute;
+        z-index: $Z_MESSAGE_YELLOW_UNDER_IMG;
+        right: -8%;
+        bottom: 67px;
+        display: block;
+        width: 45%;
+        height: 419px;
+        content: "";
+        background-color: $Yellow;
+      }
+    }
+  }
+}
+
+@include max-screen($CONTENT_WIDTH) {
+  .mrcrt-Contents {
+    padding-bottom: 0;
+    .mrcrt-Contents_Inner {
+      max-width: 1000px;
+      height: 1310px;
+      padding-left: 50px;
+
+      .mrcrt-Contents_TxtWrapper {
+        width: 516px;
+
+        .mrcrt-Contents_TxtInner {
+          padding: 60px;
+
+          .mrcrt-Contents_Ttl {
+            margin-bottom: 40px;
+            font-size: 22px;
+
+            h2 {
+              &:before {
+                top: 20px;
+                left: -100px;
+              }
+            }
+          }
+          .mrcrt-Contents_Body {
+            margin-bottom: 26px;
+            font-size: 14px;
+            line-height: 2;
+          }
+        }
+      }
+      .mrcrt-Contents_ImgWrapper {
+        right: 30px;
+        .mrcrt-Contents_ImgTieWrapper {
+          padding-top: 128px;
+
+          img {
+            width: 350px
+            ;
+          }
+          &:before {
+            right: -12%;
+            bottom: -24px;
+            width: 90%;
+            height: 290px;
+            background-color: $Yellow;
+          }
+        }
+      }
+      .mrcrt-Contents_MessageNextBlock {
+        position: absolute;
+        top: 540px;
+        left: 527px;
+        padding: 100px 90px;
+        background-color: #fff;
+
+        .mrcrt-MessageNextBlock_Body {
+          margin-bottom: 18px;
+          line-height: 2.5;
+        }
+        .from {
+          font-weight: 600;
+          text-align: right;
+          color: $Blue;
+        }
+      }
+
+      .mrcrt-Contents_HrImgWrapper {
+        position: absolute;
+        top: 1030px;
+        left: 149px;
+
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .mrcrt-Contents {
+    margin-bottom: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+
+    .mrcrt-Contents_Inner {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
+      .mrcrt-Contents_TxtWrapper {
+        position: static;
+        width: 100%;
+
+        &:after {
+          position: absolute;
+          top: -30px;
+          display: block;
+          width: 100%;
+          height: 32px;
+          content: "";
+          background-color: $Blue;
+        }
+
+        .mrcrt-Contents_TxtInner {
+          padding: 23px 66px 17px;
+
+          .mrcrt-Contents_Ttl {
+            margin-bottom: 40px;
+            font-size: 18px;
+
+            h2 {
+              &:before {
+                position: absolute;
+                top: 16px;
+                left: -80px;
+                width: 50px;
+              }
+            }
+          }
+          .mrcrt-Contents_Body {
+            font-size: 14px;
+          }
+        }
+      }
+      .mrcrt-Contents_ImgWrapper {
+        position: relative;
+        right: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+
+        .mrcrt-Contents_ImgTieWrapper {
+          padding-top: 35px;
+          text-align: right;
+
+          &:before {
+            right: -30px;
+            width: 46%;
+            height: 320px;
+          }
+        }
+      }
+      .mrcrt-Contents_MessageNextBlock {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        padding: 49px 61px 40px;
+
+        .mrcrt-MessageNextBlock_Body {
+          margin-bottom: 10px;
+          line-height: 1.9;
+        }
+        .from {
+          font-weight: 300;
+        }
+      }
+      .mrcrt-Contents_HrImgWrapper {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 70px 40px;
+
+        img {
+          width: 100%;
+        }
+
+        &:before {
+          display: none;
+        }
+
+        .mrcrt-Contents_HrImgInner {
+          position: relative;
+          z-index: $Z_MESSAGE_IMG;
+
+          &:before {
+            position: absolute;
+            z-index: $Z_MESSAGE_YELLOW_UNDER_IMG;
+            top: -50px;
+            right: -8%;
+            display: block;
+            width: 145px;
+            height: 233px;
+            content: "";
+            background-color: $Yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .mrcrt-Contents {
+    padding-right: 5%;
+    padding-bottom: 0;
+    padding-left: 5%;
+
+    .mrcrt-Contents_Inner {
+      .mrcrt-Contents_TxtWrapper {
+        &:after {
+          top: -30px;
+          width: 100%;
+          height: 32px;
+        }
+
+        .mrcrt-Contents_TxtInner {
+          padding: 23px 60px 17px;
+
+          .mrcrt-Contents_Ttl {
+            margin-bottom: 21px;
+            font-size: 15px;
+
+            h2 {
+              &:before {
+                left: -70px;
+                width: 40px;
+              }
+            }
+          }
+          .mrcrt-Contents_Body {
+            margin-bottom: 11px;
+            font-size: 13px;
+            line-height: 2;
+          }
+        }
+      }
+      .mrcrt-Contents_ImgWrapper {
+        position: static;
+        display: block;
+        width: 100%;
+
+        .mrcrt-Contents_ImgTieWrapper {
+          width: 100%;
+          padding-top: 35px;
+
+          img {
+            width: 257px;
+          }
+          &:before {
+            right: -16px;
+            bottom: -19px;
+            display: block;
+            width: 235px;
+            height: 231px;
+            content: "";
+            background-color: $Yellow;
+          }
+        }
+      }
+      .mrcrt-Contents_MessageNextBlock {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        padding: 49px 61px 40px;
+
+        .mrcrt-MessageNextBlock_Body {
+          margin-bottom: 10px;
+          line-height: 1.9;
+        }
+        .from {
+          font-weight: 300;
+        }
+      }
+      .mrcrt-Contents_HrImgWrapper {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 90px 30px 0 0;
+
+        img {
+          width: 100%;
+        }
+
+        &:before {
+          display: none;
+        }
+        .mrcrt-Contents_HrImgInner {
+          position: relative;
+
+          &:before {
+            top: -50px;
+            right: -8%;
+            width: 145px;
+            height: 233px;
+          }
+        }
+      }
+    }
+  }
+}

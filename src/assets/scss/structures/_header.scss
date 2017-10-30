@@ -1,0 +1,266 @@
+// 役割をわかりやすくするために、ヘッダー・フッターのコンポーネントにはst-をプレフィックスにつける（p142）
+
+// st-header
+
+.st-header_Wrapper {
+  padding: 28px 26px 28px 39px;
+  background-color: #fff;
+
+  @extend .clearfix;
+
+  .st-Header_Logo {
+    float: left;
+    padding-top: 14px;
+  }
+
+  .st-Header_Nav {
+    float: right;
+    margin-right: 10px;
+
+    .st-Header_Ul {
+      list-style: none;
+    }
+
+    .st-Header_Li {
+      position: relative;
+      float: left;
+      margin-right: 65px;
+      cursor: pointer;
+      font-size: 14px;
+
+      a, p {
+        text-decoration: none;
+      }
+
+      &:after {
+        position: absolute;
+        right: -40px;
+        bottom: 10px;
+        width: 22px;
+        height: 2px;
+        content: "";
+        cursor: default;
+        -webkit-transform: rotateZ(-65deg);
+           -moz-transform: rotateZ(-65deg);
+                transform: rotateZ(-65deg);
+        background-color: #e2e2e2;
+      }
+    }
+
+    .st-Header_LiMenu {
+      padding-top: 20px;
+
+      a {
+        &:hover {
+          font-weight: 600;
+          color: #0f1985;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        &:hover {
+          cursor: default;
+          font-weight: 300;
+        }
+      }
+      &:hover {
+        cursor: default;
+      }
+    }
+
+    .st-Header_LiEntry {
+      margin-right: 0;
+      border-radius: 50px;
+      background-color: $Yellow;
+
+      &:after {
+        width: 0;
+        height: 0;
+      }
+
+      .st-Header_Entry {
+        position: relative;
+        display: block;
+        padding: 20px 50px 20px 90px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-radius: 50px;
+
+        &:hover {
+          padding: 20px 50px 20px 90px;
+          transition: 0.3s ease-out;
+          background-color: #ffc038;
+        }
+
+        &:before {
+          position: absolute;
+          top: 23px;
+          left: 53px;
+          width: 10%;
+          height: 40%;
+          content: "";
+          background: url(../img/header/entry-iqon.png) 0 0 no-repeat transparent;
+          background-size: 13px 15px;
+        }
+      }
+    }
+  }
+
+  .st-Header_Dropmenu {
+    *zoom: 1;
+
+    .st-Header_LiMenu:hover > a {
+      font-weight: 600;
+      color: #0f1985;
+    }
+
+    &:before, &:after {
+      display: table;
+      content: "";
+    }
+    .st-Header_UlDropmenu {
+      position: absolute;
+      z-index: $Z_TOP_PC_DROPMENU;
+      top: 100%;
+      left: -30px;
+      margin: 0;
+      padding: 0;
+
+      .st-Header_LiDropmenu {
+        width: 213px;
+        list-style: none;
+
+        a {
+          display: block;
+          padding: 15px 30px 10px;
+          text-align: left;
+          background-color: #f0f2f7;
+        }
+
+        &:first-child {
+          a {
+            display: block;
+            padding: 30px 30px 10px;
+            text-align: left;
+            background-color: #f0f2f7;
+          }
+        }
+
+        &:last-child {
+          a {
+            display: block;
+            padding: 10px 30px 30px;
+            text-align: left;
+            background-color: #f0f2f7;
+          }
+        }
+      }
+    }
+  }
+
+  #Drop-Down_Menu {
+    li {
+      ul {
+        visibility: hidden;
+        padding-top: 28px;
+        -webkit-transition: all 0.35s ease-out 0s;
+                transition: all 0.35s ease-out 0s;
+        -webkit-transform: translate3d(-5%,15px,0);
+                transform: translate3d(-5%,15px,0);
+        opacity: 0;
+
+        filter: blur(3px);
+      }
+      &:hover ul {
+        visibility: visible;
+        padding-top: 28px;
+        -webkit-transition: all 0.35s cubic-bezier(0.215,0.61,0.355,1) 0s;
+                transition: all 0.35s cubic-bezier(0.215,0.61,0.355,1) 0s;
+        -webkit-transform: translate3d(-5%,0,0);
+                transform: translate3d(-5%,0,0);
+        opacity: 1;
+
+        filter: blur(0);
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_PC) {
+  .st-header_Wrapper {
+    padding: 14px 13px 14px 19px;
+
+    .st-Header_Logo {
+      padding-top: 21px;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .st-Header_Nav {
+      margin-right: 0;
+
+      .st-Header_Li {
+        margin-right: 45px;
+        font-size: 13px;
+
+        &:after {
+          position: absolute;
+          right: -35px;
+          bottom: 10px;
+        }
+      }
+
+      .st-Header_LiMenu {
+        padding-top: 20px;
+      }
+
+      .st-Header_LiEntry {
+        margin-right: 0;
+        border-radius: 50px;
+        background-color: $Yellow;
+
+        &:after {
+          width: 0;
+          height: 0;
+        }
+
+        .st-Header_Entry {
+          padding: 20px 40px 20px 60px;
+          font-size: 14px;
+
+          &:hover {
+            padding: 20px 40px 20px 60px;
+          }
+
+          &:before {
+            top: 23px;
+            left: 37px;
+            width: 10%;
+            height: 100%;
+            background-size: 12px 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-header_Wrapper {
+    padding: 12px 13px 13px 19px;
+
+    .st-Header_Logo {
+      padding-top: 9px;
+
+      img {
+        width: 73%;
+      }
+    }
+
+    .st-Header_Nav {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,235 @@
+extend _includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "ミニストップ｜採用サイト";
+  - var pageDescription= "ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、社員インタビュー、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "index.html";
+
+block meta
+  +meta('./')
+
+block loading_page
+  link(rel="stylesheet" href="./assets/css/loading_page.css")
+  script(src="./assets/js/loading_page.js")
+
+block header
+  .loading-Bar
+  img.loading-Img(src='./assets/img/opening_logo.png', alt='ミニストップ ロゴ',style='display:none;')
+  +header('./')
+
+block content
+  // contents
+  .js-Slide_Contents
+    .top-Wrapper
+      .top-Mv
+        .top-Mv_Inner
+          .top-Mv_TxtWrapper
+            .top-Mv_SubTtl
+              p MINISTOP RECRUITING SITE
+            .top-Mv_Ttl
+              h1
+                //- | 何気ない
+                //- br.sp-AddLine
+                //- | 「
+                //- span.txt-Yellow 毎日
+                //- | 」にこそ、
+                //- br.sp-AddLine.pc-AddLine
+                //- | こだわりを。
+                include _includes/_mv_ttl
+            .top-Mv_Body
+              p
+                | 街の雰囲気、住んでいる人、季節。
+                br
+                | 何気なく過ぎる「毎日」でも
+                br
+                | 想いがあれば、違った景色が見えてくる。
+                br
+                | 全ての人の「毎日」を少しでも良くしたい。
+                br
+                | 何気ない「毎日」にこそ、こだわりを。
+            .top-Mv_Scroll
+              p SCROLL
+          .top-Mv_Img
+            img.slide_img.slide_img1(src='./assets/img/top/mv-1.png', alt='アイスクリームを食べる子供')
+            img.slide_img.slide_img2(src='./assets/img/top/mv-2.png', alt='一緒に運動をする夫婦')
+            img.slide_img.slide_img3(src='./assets/img/top/mv-3.png', alt='コーヒーを飲みながらパソコンを見ている男性')
+            img.slide_img.slide_img4(src='./assets/img/top/mv-4.png', alt='食卓でワインを飲む女性')
+          .top-Mv_ImgSp
+            img.slide_img.slide_img1(src='./assets/img/top/mvsp-1.png', alt='アイスクリームを食べる子供')
+            img.slide_img.slide_img2(src='./assets/img/top/mvsp-2.png', alt='一緒に運動をする夫婦')
+            img.slide_img.slide_img3(src='./assets/img/top/mvsp-3.png', alt='コーヒーを飲みながらパソコンを見ている男性')
+            img.slide_img.slide_img4(src='./assets/img/top/mvsp-4.png', alt='食卓でワインを飲む女性')
+        .top-News_Wrapper
+          table.top-News_Table
+            tr.top-News_TableTr
+              th.top-News_TableNews NEWS
+              th.top-News_TableDate 2017.7.27
+              th.top-News_TableContents ミニストップ株式会社　総合採用サイトオープン
+      .top-Message
+        .top-Message_Inner
+          .top-Message_Img
+            img(src='./assets/img/top/message-img.png', alt='料理がたくさんある食卓')
+          .top-Message_TxtWrapper
+            .top-Message_TtlWrapper
+              h2
+                img(src='./assets/img/top/message-ttl.png', alt='タイトル メッセージ')
+            .top-Message_SubTtlWrapper
+              p 何気ない「毎日」にこそ、こだわりを。
+            .top-Message_Txt
+              p
+                | 街の雰囲気、住んでいる人、季節。
+                br
+                | 何気なく過ぎる「毎日」でも
+                br
+                | 想いがあれば、違った景色が見えてくる。
+                br
+                | 全ての人の「毎日」を少しでも良くしたい。
+            .btn.btn-Grey
+              a.animsition-link(href='./message/concept.html') コンセプトメッセージ
+              .button-Slide
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+      .top-Company
+        .top-Company_Inner
+          .top-Company_Img
+            img(src='./assets/img/top/company-img.png', alt='Xフライドポテトとバニラソフトクリーム')
+          .top-Company_TxtWrapper
+            .top-Company_TtlWrapper
+              h2
+                img(src='./assets/img/top/company-ttl.png', alt='タイトル カンパニー')
+            .top-Company_SubTtlWrapper
+              p ミニストップの特長
+            .top-Company_Txt
+              p
+                | 徹底してサービス品質にこだわることで
+                br
+                | 安全・安心を提供し、健康にも良い商品や
+                br
+                | サービスを展開しております。
+            .btn.btn-Grey
+              a.animsition-link(href='./aboutus/features.html') ミニストップの特長
+              .button-Slide
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+      .top-Interview
+        .top-Interview_Inner
+          .top-Interview_TtlWrapper
+            .top-Interview_Ttl
+              h2
+                img(src='./assets/img/top/interview-ttl.png', alt='タイトル インタビュー')
+            .top-Interview_SubTtl
+              p 社員インタビュー
+          .top-Interview_MemberWrapper
+            .top-Interview_MemberLeft
+              a.animsition-link(href='./interview/01.html')
+                img(src='./assets/img/top/interview-ootsuka.png', alt='ミニストップの社員')
+                .button
+                  span.button-Cover
+                    span.i.i-down.before
+                    span.i.i-down.after
+                .top-Interview_MemberName
+                  p #{ootsuka}
+                .top-Interview_MemberDep
+                  p #{ootsuka_dep}
+                .top-Interview_MemberTeam
+                  p #{ootsuka_team}
+                .top-Interview_MemberPosition
+                  p #{ootsuka_position}
+            .top-Interview_MemberRight
+              a.animsition-link(href='./interview/02.html')
+                img(src='./assets/img/top/interview-inoue.png', alt='ミニストップの社員')
+                .button
+                  span.button-Cover
+                    span.i.i-down.before
+                    span.i.i-down.after
+                .top-Interview_MemberName
+                  p #{inoue}
+                .top-Interview_MemberDep
+                  p #{inoue_dep}
+                .top-Interview_MemberTeam
+                  p #{inoue_team}
+                .top-Interview_MemberPosition
+                  p #{inoue_position}
+          .top-Interview_MemberWrapper
+            .top-Interview_MemberLeft
+              a.animsition-link(href='./interview/03.html')
+                img(src='./assets/img/top/interview-noguchi.png', alt='ミニストップの社員')
+                .button
+                  span.button-Cover
+                    span.i.i-down.before
+                    span.i.i-down.after
+                .top-Interview_MemberName
+                  p #{noguchi}
+                .top-Interview_MemberDep
+                  p #{noguchi_dep}
+                .top-Interview_MemberTeam
+                  p #{noguchi_team}
+                .top-Interview_MemberPosition
+                  p #{noguchi_position}
+            //- .top-Interview_MemberRight
+            //-   a.animsition-link(href='#')
+            //-     img(src='./assets/img/top/interview-sakurai.png', alt='ミニストップの社員')
+            //-     .button
+            //-       span.button-Cover
+            //-         span.i.i-down.before
+            //-         span.i.i-down.after
+            //-     .top-Interview_MemberName
+            //-       p #{sakurai}
+            //-     .top-Interview_MemberTeam
+            //-       p #{sakurai_team}
+            //-     .top-Interview_MemberPosition
+            //-       p #{sakurai_position}
+      .top-About
+        .top-About_Inner
+          .top-About_TtlWrapper
+            .top-About_Ttl
+              h2
+                img(src='./assets/img/top/about-ttl.png', alt='タイトル アバウト')
+            .top-About_SubTtl
+              p 会社を知る
+          .top-About_BtbWrapper
+            .btn.btn-Grey
+              a.animsition-link(href='./information/welfare.html') 制度紹介
+              .button-Slide
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+            .btn.btn-Grey
+              a.animsition-link(href='./information/recruit.html') 採用情報
+              .button-Slide
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+            .btn.btn-Grey
+              a.animsition-link(href='./aboutus/company.html') 会社概要
+              .button-Slide
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+
+        //- .page-Top_Wrapper
+        //-   button.page-Top_WrapperBtn(type='button')
+        //-     span.label PAGE TOP
+
+        .page-Top_WrapperTop
+          a.page-Top_WrapperBtnTop#scrollUp-Only_Top PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("top");</script>
+
+block footer
+  +footer('./')
+
+block sp_header_nav
+  +sp_header_nav('./')
+
+block script
+  +script('./')

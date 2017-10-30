@@ -1,0 +1,124 @@
+.page-Top_Wrapper {
+  padding: 15px 30px 27px;
+  text-align: right;
+  .page-Top_WrapperBtn {
+    position: relative;
+    padding: 10px 22px 7px 49px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #a8abba;
+    border-style: none;
+    border-radius: 18px;
+    background-color: #a8abba;
+
+    &:after {
+      position: absolute;
+      top: 10px;
+      left: 24px;
+      display: inline-block;
+      height: 20px;
+      content: "\f077";
+      font-family: FontAwesome;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.page-Top_WrapperTop {
+  padding: 15px 30px 27px;
+  text-align: right;
+  .page-Top_WrapperBtnTop {
+    position: relative;
+    padding: 11px 22px 11px 49px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #a8abba;
+    border-style: none;
+    border-radius: 18px;
+    background-color: #a8abba;
+    text-decoration: none;
+
+    &:after {
+      position: absolute;
+      top: 8px;
+      left: 24px;
+      display: inline-block;
+      height: 20px;
+      content: "\f077";
+      font-family: FontAwesome;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .page-Top_Wrapper {
+    padding: 0 30px 27px;
+    text-align: center;
+    .page-Top_WrapperBtn {
+      padding: 9px 15px 6px 43px;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 1px;
+
+      &:after {
+        top: 8px;
+        left: 22px;
+        height: 20px;
+        content: "\f077";
+        font-size: 13px;
+      }
+    }
+  }
+
+  .page-Top_WrapperTop {
+    padding: 15px 30px 27px;
+    text-align: center;
+    .page-Top_WrapperBtnTop {
+      position: relative;
+      padding: 9px 22px 10px 43px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      border: 2px solid #a8abba;
+      border-style: none;
+      border-radius: 18px;
+      background-color: #a8abba;
+      text-decoration: none;
+
+      &:after {
+        position: absolute;
+        top: 7px;
+        left: 22px;
+        display: inline-block;
+        height: 20px;
+        content: "\f077";
+        font-family: FontAwesome;
+        font-size: 13px;
+        color: #fff;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

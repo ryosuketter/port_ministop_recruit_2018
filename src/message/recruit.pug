@@ -1,0 +1,74 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "採用担当者からのメッセージ｜ミニストップ｜採用サイト";
+  - var pageDescription= "採用担当者からのメッセージはこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、ミニストップの特長、会社概要、社員インタビュー、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "採用担当者,メッセージ,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "採用担当者からのメッセージ｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "message/recruit.html";
+
+block content
+  // contents
+  .mrcrt-Wrapper
+    .mrcrt-Mv
+      .mrcrt-Mv_Inner
+        .mrcrt-Mv_Ttl
+          h1
+            img(src='../assets/img/message/mv-ttl.png', alt='タイトル 採用担当より')
+        .mrcrt-Mv_Subttl
+          p 採用担当より
+
+    .mrcrt-Contents
+      .mrcrt-Contents_Inner
+        .mrcrt-Contents_TxtWrapper.clearfix
+          .mrcrt-Contents_TxtInner
+            .mrcrt-Contents_Ttl
+              h2 大黒柱に車をつけよ
+            .mrcrt-Contents_Body
+              p 店を家の大黒柱にたとえ、お客さまの変化に対応し、本来動かしてはならない大黒柱も動かして対応すべきとした、イオンの源流「岡田屋」の家訓。「世の中の変化、お客さまの変化に対して柔軟に対応すべし」 という教えは、200年以上経った今でも私たちに受け継がれている。
+            .mrcrt-Contents_Body
+              p 日本でコンビニエンスストア1号店が誕生してから時が経ち、今では世の中になくてはならない存在となりました。その間、大きな変化がたくさんありましたが、その変化に果敢に挑戦し続けてきた歴史があります。
+            .mrcrt-Contents_Body
+              p 私たちは、その中で「他には無いユニークで尖った存在になる」ことを目指し、私たちにしかできないことは何かを、全員が「ひとつのチーム」となり、考え、時には共に悩み、そして行動し続けています。
+        .mrcrt-Contents_ImgWrapper
+          .mrcrt-Contents_ImgTieWrapper
+            img(src='../assets/img/message/mrcrt-contents_tie.png', alt='ネクタイを締める人')
+        .mrcrt-Contents_MessageNextBlock
+          .mrcrt-MessageNextBlock_Body
+            p 今、ミニストップが求める人材は、自発的に考え、現状に決して満足せずに、自ら成長しようとする意欲を持って、共に前進できる人です。
+          .mrcrt-MessageNextBlock_Body
+            p 周りが変わるのを待つのではなく、変えるのは「自分自身」。自らを変えて、新たな自分に生まれ変わるチャンスが、ミニストップにはあります。
+          .mrcrt-MessageNextBlock_Body
+            p お客さまの、何気ない「毎日」にこそ、笑顔とこだわりを提供したい。そんな想いを胸に、共に歩む大切な仲間を求めています。
+          .mrcrt-MessageNextBlock_Body.from
+            p ミニストップ採用担当
+        .mrcrt-Contents_HrImgWrapper
+          .mrcrt-Contents_HrImgInner
+            img(src='../assets/img/message/mrcrt-contents_hr.png', alt='ミニストップ採用担当者')
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='./concept.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p コンセプトメッセージ
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='../aboutus/features.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p ミニストップの特長
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("message/recruit");</script>

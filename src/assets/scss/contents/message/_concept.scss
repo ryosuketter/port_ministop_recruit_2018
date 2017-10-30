@@ -1,0 +1,379 @@
+.cncpt-Wrapper {
+  background-color: $Bg;
+}
+
+@include min-screen($BREAK_POINT_TABLET) {
+  .cncpt-Wrapper {
+    min-width: 1024px;
+  }
+}
+
+.cncpt-Mv {
+  //領域全体を覆う
+  height: 578px;
+  background: url("../img/message/cncpt-mv_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+
+  .cncpt-Mv_Inner {
+    padding: 245px 15% 200px;
+
+    .cncpt-Mv_Ttl {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .cncpt-Mv_Subttl {
+      font-size: 24px;
+      font-weight: 600;
+      color: $Blue;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .cncpt-Mv {
+    height: 378px;
+
+    .cncpt-Mv_Inner {
+      padding: 145px 15% 50px;
+
+      .cncpt-Mv_Ttl {
+        img {
+          width: 182px;
+        }
+      }
+
+      .cncpt-Mv_Subttl {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .cncpt-Mv {
+    height: 282px;
+
+    .cncpt-Mv_Inner {
+      padding: 97px 15% 50px;
+    }
+  }
+}
+
+.cncpt-Contents {
+  padding-bottom: 120px;
+
+  .cncpt-Contents_Inner {
+    position: relative;
+    max-width: 1154px;
+    height: 930px;
+    margin: 0 auto;
+
+    .cncpt-Contents_TxtWrapper {
+      position: absolute;
+      top: -58px;
+      display: block;
+      width: 616px;
+      color: #fff;
+      background-color: $Blue;
+
+      .cncpt-Contents_TxtInner {
+        padding: 131px 115px;
+
+        .cncpt-Contents_Ttl {
+          margin-bottom: 40px;
+          font-size: 22px;
+
+          h2 {
+            position: relative;
+            font-weight: 100;
+
+            &:before {
+              position: absolute;
+              top: 22px;
+              left: -135px;
+              display: block;
+              width: 85px;
+              content: "";
+              border-top: 3px solid $Yellow;
+            }
+          }
+        }
+        .cncpt-Contents_Body {
+          margin-bottom: 26px;
+          font-size: 15px;
+          line-height: 2.2;
+        }
+      }
+    }
+    .cncpt-Contents_ImgWrapper {
+      position: absolute;
+      top: 0;
+      right: 30px;
+
+      .cncpt-Contents_ImgFaceWrapper {
+        position: relative;
+        padding-top: 228px;
+
+        img {
+          position: relative;
+          z-index: $Z_MESSAGE_IMG;
+        }
+        &:before {
+          position: absolute;
+          z-index: $Z_MESSAGE_YELLOW_UNDER_IMG;
+          right: -12%;
+          bottom: -30px;
+          display: block;
+          width: 104%;
+          height: 390px;
+          content: "";
+          background-color: $Yellow;
+        }
+      }
+      .cncpt-Contents_ImgTreeWrapper {
+        position: absolute;
+        bottom: -368px;
+        left: -198px;
+
+        img {
+          position: relative;
+          z-index: $Z_MESSAGE_IMG;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($CONTENT_WIDTH) {
+  .cncpt-Contents {
+    padding-bottom: 0;
+    .cncpt-Contents_Inner {
+      max-width: 1000px;
+      padding-left: 50px;
+
+      .cncpt-Contents_TxtWrapper {
+        width: 516px;
+
+        .cncpt-Contents_TxtInner {
+          padding: 60px;
+
+          .cncpt-Contents_Ttl {
+            h2 {
+              &:before {
+                top: 20px;
+                left: -100px;
+              }
+            }
+          }
+          .cncpt-Contents_Body {
+            font-size: 14px;
+            line-height: 2;
+          }
+        }
+      }
+      .cncpt-Contents_ImgWrapper {
+        right: 30px;
+        .cncpt-Contents_ImgFaceWrapper {
+          padding-top: 128px;
+
+          img {
+            width: 350px;
+          }
+          &:before {
+            bottom: -24px;
+            width: 90%;
+            height: 290px;
+          }
+        }
+        .cncpt-Contents_ImgTreeWrapper {
+          bottom: -320px;
+          left: -140px;
+
+          img {
+            position: relative;
+            z-index: $Z_MESSAGE_IMG;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .cncpt-Contents {
+    padding-right: 14%;
+    padding-bottom: 0;
+    padding-left: 14%;
+
+    .cncpt-Contents_Inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto 40px;
+      padding: 0;
+
+      .cncpt-Contents_TxtWrapper {
+        position: static;
+        width: 100%;
+
+        &:after {
+          position: absolute;
+          top: -30px;
+          display: block;
+          width: 100%;
+          height: 32px;
+          content: "";
+          background-color: $Blue;
+        }
+
+        .cncpt-Contents_TxtInner {
+          padding: 23px 66px 17px;
+
+          .cncpt-Contents_Ttl {
+            margin-bottom: 40px;
+            font-size: 18px;
+
+            h2 {
+              &:before {
+                top: 16px;
+                left: -80px;
+                display: block;
+                width: 50px;
+              }
+            }
+          }
+          .cncpt-Contents_Body {
+            font-size: 14px;
+          }
+        }
+      }
+      .cncpt-Contents_ImgWrapper {
+        position: relative;
+        right: 0;
+        display: block;
+        width: 100%;
+
+        .cncpt-Contents_ImgFaceWrapper {
+          padding-top: 35px;
+          text-align: right;
+
+          &:before {
+            position: absolute;
+            right: -30px;
+            bottom: -30px;
+            width: 46%;
+            height: 320px;
+          }
+        }
+        .cncpt-Contents_ImgTreeWrapper {
+          position: static;
+          padding-top: 44px;
+          text-align: left;
+
+          img {
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+}
+.cncpt-Img_TableWrapper {
+  padding-right: 8%;
+  padding-left: 8%;
+  .cncpt-Img_TableInner {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .cncpt-Contents {
+    padding-right: 5%;
+    padding-bottom: 0;
+    padding-left: 5%;
+
+    .cncpt-Contents_Inner {
+      .cncpt-Contents_TxtWrapper {
+        &:after {
+          top: -30px;
+          width: 100%;
+          height: 32px;
+        }
+
+        .cncpt-Contents_TxtInner {
+          padding: 23px 60px 17px;
+
+          .cncpt-Contents_Ttl {
+            margin-bottom: 21px;
+            font-size: 15px;
+
+            h2 {
+              &:before {
+                left: -70px;
+                width: 40px;
+              }
+            }
+          }
+          .cncpt-Contents_Body {
+            margin-bottom: 11px;
+            font-size: 13px;
+            line-height: 2;
+
+            .add-Line {
+              display: none;
+            }
+          }
+        }
+      }
+      .cncpt-Contents_ImgWrapper {
+        position: static;
+        display: block;
+        width: 100%;
+
+        .cncpt-Contents_ImgFaceWrapper {
+          width: 100%;
+          padding-top: 35px;
+
+          img {
+            width: 257px;
+          }
+          &:before {
+            right: -16px;
+            bottom: -19px;
+            width: 235px;
+            height: 231px;
+          }
+        }
+        .cncpt-Contents_ImgTreeWrapper {
+          position: static;
+          padding-top: 29px;
+          text-align: left;
+
+          img {
+            width: 195px;
+            height: 171px;
+          }
+        }
+      }
+    }
+  }
+  .cncpt-Img_TableWrapper {
+    padding-right: 0;
+    padding-left: 0;
+    .cncpt-Img_TableInner {
+      overflow: hidden;
+      width: 100%;
+      img {
+        width: 136%;
+      }
+    }
+  }
+}

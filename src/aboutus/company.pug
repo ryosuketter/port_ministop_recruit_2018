@@ -1,0 +1,109 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "会社概要｜ミニストップ｜採用サイト";
+  - var pageDescription= "会社概要はこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、社員インタビュー、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "会社概要,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "会社概要｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "aboutus/company.html";
+
+block content
+  // contents
+  .cmpny-Wrapper
+    .cmpny-Mv
+      .cmpny-Mv_Inner
+        .cmpny-Mv_Ttl
+          h1
+            img(src='../assets/img/aboutus/mv-ttl.png', alt='タイトル 会社概要')
+        .cmpny-Mv_Subttl
+          p 会社概要
+    .cmpny-Contents
+      .cmpny-Contents_Inner
+        .cmpny-Contents_Table
+          table
+            tr
+              th 社名
+              td ミニストップ株式会社
+            tr
+              th 本店
+              td
+                | 〒261-8540
+                br
+                | 千葉県千葉市美浜区中瀬1-5-1
+            tr
+              th 代表者
+              td 代表取締役社長<br class="add-Line">藤本 明裕
+            tr
+              th 設立
+              td 1980年（昭和55年）<br class="add-Line">5月21日
+            tr
+              th 上場金融商品取引所
+              td 東京証券取引所
+            tr
+              th 証券コード
+              td 9946
+            tr
+              th 資本金
+              td 74億9,153万3,000円
+            tr
+              th 店舗数
+              td 5,254店（国内：2,263店、海外：2,991店）<br class="add-Line">※2017年2月28日現在
+            tr
+              th 従業員数
+              td 903名　<br class="add-Line">※2017年2月28日現在
+            tr
+              th 役員
+              td
+               a(href='http://www.ministop.co.jp/corporate/ir/policy/officers.html' target="_blank") 役員一覧
+                //- i.fa.fa-external-link(aria-hidden='true')
+                include ../_includes/_external_link
+            tr
+              th 事業内容
+              td
+                | コンビニエンスストア『ミニストップ』を展開。
+                br
+                | ミニストップ店経営希望者とフランチャイズ契約を締結し、商品情報や経営ノウハウを提供。
+            tr
+              th.last 店舗展開
+              td.last
+                a(href='http://www.ministop.co.jp/corporate/about/area.html' target="_blank") 世界に広がるミニストップの輪
+                  //- i.fa.fa-external-link(aria-hidden='true')
+                  include ../_includes/_external_link
+                <br class="add-Line">
+                a(href='http://www.ministop.co.jp/corporate/about/shop/' target="_blank") 店舗数一覧
+                  //- i.fa.fa-external-link(aria-hidden='true')
+                  include ../_includes/_external_link
+                ul
+                  li.cmpny-Contents_TableTtl 海外店舗一覧
+                  li 韓国ミニストップ株式会社
+                  li ROBINSONS CONVENIENCE STORES, INC.
+                  li 青島迷你島便利店有限公司
+                  li MINISTOP VIETNAM COMPANY LIMITED
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='./features.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p ミニストップの特長
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='../interview/index.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p 社員インタビュー
+
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("aboutus/company");</script>

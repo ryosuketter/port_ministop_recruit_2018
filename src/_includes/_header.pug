@@ -1,0 +1,46 @@
+// header
+mixin header(path)
+  .st-header_Wrapper.st-header_WrapperTop#Totop
+    .st-Header_Logo
+      a(href=path)
+        img(src=path + 'assets/img/header/header-logo.png', alt='ミニストップ ロゴ')
+    nav.st-Header_Nav.st-Header_Dropmenu#Drop-Down_Menu
+      ul.st-Header_Ul
+        li.st-Header_Li.st-Header_LiMenu
+          p メッセージ
+            ul.st-Header_UlDropmenu
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'message/concept.html') コンセプトメッセージ
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'message/recruit.html') 採用担当より
+        li.st-Header_Li.st-Header_LiMenu
+          p 会社を知る
+            ul.st-Header_UlDropmenu
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'aboutus/features.html') ミニストップの特長
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'aboutus/company.html') 会社概要
+        li.st-Header_Li.st-Header_LiMenu
+          p 社員インタビュー
+            ul.st-Header_UlDropmenu
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'interview/index.html') 一覧で見る
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'interview/01.html') #{ootsuka}
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'interview/02.html') #{inoue}
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'interview/03.html') #{noguchi}
+              //- li.st-Header_LiDropmenu
+              //-   a(href=path + 'interview/04.html') #{sakurai}
+        li.st-Header_Li.st-Header_LiMenu
+          p 制度・採用情報
+            ul.st-Header_UlDropmenu
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'information/welfare.html') 制度紹介
+              li.st-Header_LiDropmenu
+                a.animsition-link(href=path + 'information/recruit.html') 採用情報
+        li.st-Header_Li.st-Header_LiEntry
+          a.st-Header_Entry.animsition-link(href=path + 'information/recruit.html', onclick="ga('send', 'event', 'internal_link', 'click', 'entry_hd_PC');") ENTRY
+
+// /header

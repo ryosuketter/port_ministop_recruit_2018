@@ -1,0 +1,90 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "ミニストップの特長｜ミニストップ｜採用サイト";
+  - var pageDescription= "ミニストップの特長はこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、会社概要、社員インタビュー、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "ミニストップ,特長,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "ミニストップの特長｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "aboutus/features.html";
+
+block content
+  // contents
+  .feat-Wrapper
+    .feat-Mv
+      .feat-Mv_Inner
+        .feat-Mv_Ttl
+          h1
+            img(src='../assets/img/aboutus/mv-ttl.png', alt='タイトル ミニストップの特長')
+        .feat-Mv_Subttl
+          p ミニストップの特長
+    .feat-Contents
+      .feat-Contents_Inner
+        .feat-Contents_Ttl
+          .feat-Contents_Hd
+            h2 ミニストップだからできる「こだわり」
+          .feat-Contents_Body
+            p ミニストップでは、イオングループのシナジーを生かし、会社としての独自性を創り出しています。
+        .feat-Contents_BlockWrapper
+          .feat-Contents_Block.top
+            span.two_Line
+             | グループ
+             br
+             | シナジー
+            .feat-Contents_BlockInner
+              .feat-Contents_BlockTtl
+                h3 イオンのグループシナジー
+              .feat-Contents_BlockBody
+                .feat-Contents_BlockTxt
+                  p ミニストップは小売業として国内最大級のグループであるイオングループの一員です。その一員であるメリットは、国内外の市場に浸透しているイオンのブランド力や、イオンのプライベートブランド「トップバリュ」の取り扱い、原材料の共同調達や商品の共同開発などにより、魅力的で価値ある商品を提供できることです。グループシナジーを最大限に活用し、多様化するお客さまのニーズの一歩先を行く商品開発を目指しています。
+                .feat-Contents_BlockImg
+                  img(src='../assets/img/aboutus/feat_block_top.png', alt='イオン ビル')
+          .feat-Contents_Block.mid
+            span.one_Line 会社
+            .feat-Contents_BlockInner
+              .feat-Contents_BlockTtl
+                h3 コンボストアという独自のスタイル
+              .feat-Contents_BlockBody
+                .feat-Contents_BlockTxt
+                  p 「コンビニエンスストア」と「店内加工ファストフード」を融合させた「コンボストア」というスタイルで店舗を展開しています。これはいつでも“できたてのおいしさ”を店内ですぐに楽しめるミニストップならではのスタイルです。ミニストップのロゴマークは『街角のあなたの憩いの場』をイメージし、家と木をモチーフに丸みを帯びたラインで社名のMINISTOPの文字を囲んでいます。まさにこのロゴマークに込められた想いの通り、地域になくてはならない存在になり、お客さまの日々のくらしを『夢のある未来』に変えていくために、さまざまな商品やサービスを提供しております。
+                .feat-Contents_BlockImg
+                  img(src='../assets/img/aboutus/feat_block_mid.png', alt='Xフライドポテトとバニラソフトクリーム')
+          .feat-Contents_Block.btm
+            span.one_Line 業務
+            .feat-Contents_BlockInner
+              .feat-Contents_BlockTtl
+                h3 おいしさへのこだわり
+              .feat-Contents_BlockBody
+                .feat-Contents_BlockTxt
+                  p ミニストップは、創業当初より「できたて」にこだわった商品提供を行っております。お客さまからご注文いただいた後に加える“ひとてま”。これがおいしさの秘密です。ソフトクリームやパフェ・ハロハロはご注文をいただいてから加工します。ポテトやチキンなどはご注文いただいた後に最終加工を行い、「いつでも“できたてのおいしさ”」を提供します。これらができるのも、店内に厨房を併設しているから。全店にイートインを設置（※一部店舗除く）しているのは、ミニストップで販売する商品とともに憩いの場を提供するため。ミニストップが、創業当初よりこだわるおいしさを引き出す鍵です。
+                .feat-Contents_BlockImg
+                  img(src='../assets/img/aboutus/feat_block_btm.png', alt='食べ物をほおばる子供')
+      .feat-Contents_BtnWrapper
+        p.feat-Contents_Btn ミニストップのバリュー
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='../message/recruit.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p 採用担当より
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='./company.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p 会社概要
+
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("aboutus/features");</script>

@@ -1,0 +1,1267 @@
+.intvwDetail-Wrapper {
+  background-color: $Bg;
+}
+
+@include min-screen($BREAK_POINT_TABLET) {
+  .intvwDetail-Wrapper {
+    min-width: 1024px;
+  }
+}
+
+.intvwDetail-Mv {
+  position: relative;
+  //領域全体を覆う
+
+  height: 578px;
+
+  .intvwDetail-Mv_Inner {
+    padding: 181px 14% 200px;
+
+    .intvwDetail-Mv_Ttl {
+      .intvwDetail-Mv_TtlWrapper {
+        margin-bottom: 13px;
+      }
+      .intvwDetail-Mv_TtlWrapperCover {
+        background-color: #ffffff;
+        display: inline;
+        padding: 12px 1px 12px 10px;
+
+        .add-Line {
+          display: none;
+        }
+      }
+      p {
+        color: $Blue;
+        display: inline;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 2.4px;
+        margin-bottom: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.intvwDetail-MvOotsuka {
+  background: url("../img/interview/detail/ootsuka-mv_bgimg.png")no-repeat center top 0;
+  background-size: cover;
+}
+.intvwDetail-MvInoue {
+  background: url("../img/interview/detail/inoue-mv_bgimg.png")no-repeat center top 0;
+  background-size: cover;
+}
+.intvwDetail-MvNoguchi {
+  background: url("../img/interview/detail/noguchi-mv_bgimg.png")no-repeat center top 0;
+  background-size: cover;
+}
+
+.intvwDetail-Mv_WhoWrapper {
+  position: absolute;
+  bottom: -60px;
+  left: 14%;
+
+  background-color: $Blue;
+  color: #ffffff;
+  height: 250px;
+  width: 315px;
+
+  .intvwDetail-Mv_WhoInner {
+    position: relative;
+
+    padding: 42px 40px 54px 52px;
+
+    .intvwDetail-Mv_WhoName {
+      h1 {
+        font-size: 27px;
+        font-weight: 100;
+      }
+    }
+    .intvwDetail-Mv_WhoPosition {
+      margin-bottom: 15px;
+      p {
+        font-size: 13.5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &:before {
+    position: absolute;
+    bottom: -31px;
+    left: 50px;
+
+    background-color: $Yellow;
+    content: "";
+    display: block;
+    height: 100px;
+    width: 365px;
+    z-index: $Z_INTERVIEW_DETAIL_MV_NAME_YELLOW_GB;
+  }
+}
+
+@include max-screen($BREAK_POINT_PC) {
+  .intvwDetail-Mv {
+    //領域全体を覆う
+    height: 578px;
+
+    .intvwDetail-Mv_Inner {
+      padding: 181px 8% 200px;
+
+      .intvwDetail-Mv_Ttl {
+        .intvwDetail-Mv_TtlWrapper {
+          margin-bottom: 13px;
+        }
+        .intvwDetail-Mv_TtlWrapperCover {
+          background-color: #ffffff;
+          display: inline;
+          padding: 12px 1px 12px 10px;
+        }
+        p {
+          color: $Blue;
+          display: inline;
+          font-size: 22px;
+          font-style: italic;
+          font-weight: 600;
+          letter-spacing: 2.4px;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .intvwDetail-MvOotsuka {
+    background: url("../img/interview/detail/ootsuka-mv_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+  }
+  .intvwDetail-MvInoue {
+    background: url("../img/interview/detail/inoue-mv_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+  }
+  .intvwDetail-MvNoguchi {
+    background: url("../img/interview/detail/noguchi-mv_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+  }
+
+  .intvwDetail-Mv_WhoWrapper {
+    position: absolute;
+    bottom: -60px;
+    left: 8%;
+
+    background-color: $Blue;
+    color: #ffffff;
+    height: 250px;
+    width: 315px;
+
+    .intvwDetail-Mv_WhoInner {
+      position: relative;
+
+      padding: 42px 40px 54px 52px;
+
+      .intvwDetail-Mv_WhoName {
+        h1 {
+          font-size: 27px;
+          font-weight: 100;
+        }
+      }
+      .intvwDetail-Mv_WhoPosition {
+        margin-bottom: 15px;
+        p {
+          font-size: 13.5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      bottom: -31px;
+      left: 50px;
+
+      background-color: $Yellow;
+      content: "";
+      display: block;
+      height: 100px;
+      width: 365px;
+      z-index: $Z_INTERVIEW_DETAIL_MV_NAME_YELLOW_GB;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .intvwDetail-Mv {
+    //領域全体を覆う
+    height: 578px;
+
+    .intvwDetail-Mv_Inner {
+      padding: 181px 8% 200px;
+
+      .intvwDetail-Mv_Ttl {
+        .intvwDetail-Mv_TtlWrapper {
+          margin-bottom: 0;
+        }
+        .intvwDetail-Mv_TtlWrapperCover {
+          background-color: #ffffff;
+          display: inline;
+          padding: 6px 1px 6px 0;
+
+          .add-Line {
+            display: block;
+          }
+        }
+        p {
+          color: $Blue;
+          display: inline;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: 600;
+          letter-spacing: 2.4px;
+          line-height: 2;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .intvwDetail-MvOotsuka {
+    background: url("../img/interview/detail/ootsuka-mv_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+  }
+  .intvwDetail-MvInoue {
+    background: url("../img/interview/detail/inoue-mv_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+  }
+  .intvwDetail-MvNoguchi {
+    background: url("../img/interview/detail/noguchi-mv_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+  }
+
+  .intvwDetail-Mv_WhoWrapper {
+    position: absolute;
+    bottom: -60px;
+    left: 8%;
+
+    background-color: $Blue;
+    color: #ffffff;
+    height: 185px;
+    width: 282px;
+
+    .intvwDetail-Mv_WhoInner {
+      position: relative;
+
+      padding: 23px 20px 25px 34px;
+
+      .intvwDetail-Mv_WhoName {
+        h1 {
+          font-size: 20px;
+          font-weight: 100;
+          margin-bottom: 10px;
+        }
+      }
+      .intvwDetail-Mv_WhoPosition {
+        margin-bottom: 11px;
+        p {
+          font-size: 13.5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      bottom: -16px;
+      left: 35px;
+
+      background-color: $Yellow;
+      content: "";
+      display: block;
+      height: 90px;
+      width: 305px;
+      z-index: $Z_INTERVIEW_DETAIL_MV_NAME_YELLOW_GB;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .intvwDetail-Mv {
+    //領域全体を覆う
+    height: 282px;
+
+    .intvwDetail-Mv_Inner {
+      padding: 44px 18px 200px;
+
+      .intvwDetail-Mv_Ttl {
+        .intvwDetail-Mv_TtlWrapper {
+          margin-bottom: 0;
+        }
+        .intvwDetail-Mv_TtlWrapperCover {
+          background-color: #ffffff;
+          display: inline;
+          padding: 2px 1px 2px 1px;
+
+          .add-Line {
+            display: block;
+          }
+        }
+        p {
+          color: $Blue;
+          display: inline;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 600;
+          letter-spacing: 1px;
+          line-height: 1.7;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .intvwDetail-MvOotsuka {
+    background: url("../img/interview/detail/ootsuka-mv_bgimgsp.png")no-repeat center top 0;
+    background-size: cover;
+  }
+  .intvwDetail-MvInoue {
+    background: url("../img/interview/detail/inoue-mv_bgimgsp.png")no-repeat center top 0;
+    background-size: cover;
+  }
+  .intvwDetail-MvNoguchi {
+    background: url("../img/interview/detail/noguchi-mv_bgimgsp.png")no-repeat center top 0;
+    background-size: cover;
+  }
+
+  .intvwDetail-Mv_WhoWrapper {
+    position: absolute;
+    bottom: -88px;
+    left: 0;
+
+    background-color: $Blue;
+    color: #ffffff;
+    height: 175px;
+    width: 282px;
+
+    .intvwDetail-Mv_WhoInner {
+      position: relative;
+
+      padding: 18px 20px 25px 34px;
+
+      .intvwDetail-Mv_WhoName {
+        h1 {
+          font-size: 20px;
+          font-weight: 100;
+          margin-bottom: 10px;
+        }
+      }
+      .intvwDetail-Mv_WhoPosition {
+        margin-bottom: 11px;
+        p {
+          font-size: 13.5px;
+          font-weight: 100;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      bottom: -16px;
+      left: 35px;
+
+      background-color: $Yellow;
+      content: "";
+      display: block;
+      height: 110px;
+      width: 285px;
+      z-index: $Z_INTERVIEW_DETAIL_MV_NAME_YELLOW_GB;
+    }
+  }
+}
+
+.intvwDetail-Contents {
+  margin: 0 auto;
+  margin-top: 192px;
+  max-width: 1200px;
+}
+
+.intvwDetail-Contents_Caption01Wrapper {
+  position: relative;
+
+  margin-bottom: 124px;
+  .intvwDetail-Contents_CaptionNumTxtWrapper {
+    position: absolute;
+    top: 92px;
+    left: 103px;
+
+    .intvwDetail-Contents_CaptionNumTxtInner {
+      position: relative;
+
+      color: #c9c8c0;
+      display: inline-block;
+      height: 100%;
+    }
+
+    .caption-Txt {
+      font-weight: 100;
+      letter-spacing: 2px;
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+    }
+
+    .caption-Num {
+      position: absolute;
+      top: -60px;
+      left: 6px;
+
+      font-size: 18px;
+
+      &:before {
+        position: absolute;
+        bottom: -22px;
+        left: 5px;
+
+        background-color: #c9c8c0;
+        content: "";
+        display: block;
+        height: 15px;
+        width: 1px;
+      }
+
+      &:after {
+        position: absolute;
+        bottom: -4px;
+        left: -14px;
+
+        border: 1px #c9c8c0 solid;
+        border-radius: 100%;
+        content: "";
+        display: block;
+        height: 39px;
+        width: 39px;
+      }
+    }
+  }
+  .intvwDetail-Contents_TxtWrapper {
+    background-color: #ffffff;
+    display: block;
+    margin-left: 13.6%;
+    .intvwDetail-Contents_TxtInner {
+      padding: 95px 116px 68px;
+      .intvwDetail-Contents_Ttl {
+        margin-bottom: 33px;
+        h2 {
+          color: $interview_Detail_H2_Blue;
+          font-size: 32px;
+          margin-bottom: 0;
+
+          .add-Line {
+            display: none;
+          }
+        }
+      }
+      .intvwDetail-Contents_Body {
+        p {
+          font-size: 15px;
+          letter-spacing: -0.5px;
+          line-height: 2.3;
+        }
+      }
+    }
+  }
+  .intvwDetail-Contents_ImgWrapper {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_PC) {
+  .intvwDetail-Contents {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding-top: 192px;
+  }
+
+  .intvwDetail-Contents_Caption01Wrapper {
+    position: relative;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      position: absolute;
+      top: 92px;
+      left: 65px;
+
+      .intvwDetail-Contents_CaptionNumTxtInner {
+        position: relative;
+
+        color: #c9c8c0;
+        display: inline-block;
+        height: 100%;
+      }
+
+      .caption-Txt {
+        font-weight: 100;
+        letter-spacing: 2px;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+      }
+
+      .caption-Num {
+        position: absolute;
+        top: -60px;
+        left: 6px;
+
+        font-size: 18px;
+
+        &:before {
+          position: absolute;
+          bottom: -22px;
+          left: 5px;
+
+          background-color: #c9c8c0;
+          content: "";
+          display: block;
+          height: 15px;
+          width: 1px;
+        }
+
+        &:after {
+          position: absolute;
+          bottom: -4px;
+          left: -14px;
+
+          border: 1px #c9c8c0 solid;
+          border-radius: 100%;
+          content: "";
+          display: block;
+          height: 39px;
+          width: 39px;
+        }
+      }
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      background-color: #ffffff;
+      display: block;
+      margin-left: 13.6%;
+      .intvwDetail-Contents_TxtInner {
+        padding: 95px 116px 68px;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 20px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 30px;
+            letter-spacing: -2.4px;
+            margin-bottom: 0;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .intvwDetail-Contents_ImgWrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .intvwDetail-Contents {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding-top: 110px;
+    width: 100%;
+  }
+
+  .intvwDetail-Contents_Caption01Wrapper {
+    position: relative;
+
+    margin-bottom: 60px;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      display: none;
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      background-color: #ffffff;
+      display: block;
+      height: auto;
+      margin-left: auto;
+      width: 100%;
+      .intvwDetail-Contents_TxtInner {
+        padding: 50px 60px;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 20px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 30px;
+            margin-bottom: 0;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .intvwDetail-Contents_ImgWrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .intvwDetail-Contents {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding-top: 137px;
+    width: 100%;
+  }
+
+  .intvwDetail-Contents_Caption01Wrapper {
+    position: relative;
+
+    margin-bottom: -5px;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      display: none;
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      background-color: #ffffff;
+      display: block;
+      height: auto;
+      margin-left: auto;
+      width: 100%;
+      .intvwDetail-Contents_TxtInner {
+        padding: 42px 32px 37px;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 20px;
+          br {
+            display: none;
+          }
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 23px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+
+            .add-Line {
+              display: block;
+            }
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 16px;
+            letter-spacing: 0.9px;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+    .intvwDetail-Contents_ImgWrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.intvwDetail-Contents_Caption02Wrapper {
+  position: relative;
+
+  margin-bottom: 91px;
+  .intvwDetail-Contents_CaptionNumTxtWrapper {
+    position: absolute;
+    top: -30px;
+    right: 101px;
+
+    background-color: $Yellow;
+    display: block;
+    height: 238px;
+    width: 587px;
+    z-index: $Z_INTERVIEW_DETAIL_CAPTION;
+
+    .intvwDetail-Contents_CaptionNumTxtInner {
+      position: absolute;
+      top: 120px;
+      right: 38px;
+
+      color: #ffffff;
+      display: inline-block;
+      height: 100%;
+    }
+
+    .caption-Txt {
+      font-weight: 100;
+      letter-spacing: 2px;
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+      position: absolute;
+      right: 0;
+    }
+
+    .caption-Num {
+      position: absolute;
+      top: -60px;
+      right: 5px;
+
+      font-size: 18px;
+
+      &:before {
+        position: absolute;
+        right: 5px;
+        bottom: -22px;
+
+        background-color: #ffffff;
+        content: "";
+        display: block;
+        height: 15px;
+        width: 1px;
+      }
+
+      &:after {
+        position: absolute;
+        right: -14px;
+        bottom: -4px;
+
+        border: 1px #ffffff solid;
+        border-radius: 100%;
+        content: "";
+        display: block;
+        height: 39px;
+        width: 39px;
+      }
+    }
+  }
+  .intvwDetail-Contents_TxtWrapper {
+    position: relative;
+
+    background-color: #ffffff;
+    display: block;
+    margin-right: 16.6%;
+    z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+    .intvwDetail-Contents_TxtInner {
+      position: relative;
+
+      padding: 95px 116px 68px;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+      .intvwDetail-Contents_Ttl {
+        margin-bottom: 33px;
+        h2 {
+          color: $interview_Detail_H2_Blue;
+          font-size: 32px;
+          margin-bottom: 0;
+        }
+      }
+      .intvwDetail-Contents_Body {
+        p {
+          font-size: 15px;
+          letter-spacing: -0.5px;
+          line-height: 2.3;
+        }
+      }
+    }
+  }
+  .intvwDetail-Contents_ImgWrapper {
+    margin-right: 16.6%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_PC) {
+  .intvwDetail-Contents_Caption02Wrapper {
+    position: relative;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      position: absolute;
+      top: -30px;
+      right: 70px;
+
+      background-color: $Yellow;
+      display: block;
+      height: 238px;
+      width: 587px;
+      z-index: $Z_INTERVIEW_DETAIL_CAPTION;
+
+      .intvwDetail-Contents_CaptionNumTxtInner {
+        position: absolute;
+        top: 120px;
+        right: 38px;
+
+        color: #ffffff;
+        display: inline-block;
+        height: 100%;
+      }
+
+      .caption-Txt {
+        font-weight: 100;
+        letter-spacing: 2px;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+      }
+
+      .caption-Num {
+        position: absolute;
+        top: -60px;
+        right: 5px;
+
+        font-size: 18px;
+
+        &:before {
+          position: absolute;
+          right: 5px;
+          bottom: -22px;
+
+          background-color: #ffffff;
+          content: "";
+          display: block;
+          height: 15px;
+          width: 1px;
+        }
+
+        &:after {
+          position: absolute;
+          right: -14px;
+          bottom: -4px;
+
+          border: 1px #ffffff solid;
+          border-radius: 100%;
+          content: "";
+          display: block;
+          height: 39px;
+          width: 39px;
+        }
+      }
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      position: relative;
+
+      background-color: #ffffff;
+      display: block;
+      margin-right: 16.6%;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+      .intvwDetail-Contents_TxtInner {
+        position: relative;
+
+        padding: 95px 116px 68px;
+        z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 33px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 32px;
+            margin-bottom: 0;
+          }
+          h2.adjust03 {
+            letter-spacing: -2.4px;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 2.3;
+          }
+        }
+      }
+    }
+    .intvwDetail-Contents_ImgWrapper {
+      margin-right: 16.6%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .intvwDetail-Contents_Caption02Wrapper {
+    position: relative;
+
+    margin-bottom: -5px;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      display: none;
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      position: relative;
+
+      background-color: #ffffff;
+      display: block;
+      margin-right: 0;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+      .intvwDetail-Contents_TxtInner {
+        position: relative;
+
+        padding: 50px 60px;
+        z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 20px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 30px;
+            margin-bottom: 0;
+          }
+          h2.adjust03 {
+            letter-spacing: 0;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .intvwDetail-Contents_ImgWrapper {
+      margin-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .intvwDetail-Contents_Caption02Wrapper {
+    position: relative;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      display: none;
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      position: relative;
+
+      background-color: #ffffff;
+      display: block;
+      margin-right: 0;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+      .intvwDetail-Contents_TxtInner {
+        position: relative;
+
+        padding: 42px 32px 37px;
+        z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 20px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 23px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 16px;
+            letter-spacing: 0.9px;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+    .intvwDetail-Contents_ImgWrapper {
+      margin-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.intvwDetail-Contents_Caption03Wrapper {
+  position: relative;
+
+  margin-bottom: 97px;
+  .intvwDetail-Contents_CaptionNumTxtWrapper {
+    position: absolute;
+    bottom: -30px;
+    left: 67px;
+
+    background-color: $Yellow;
+    display: block;
+    height: 235px;
+    width: 483px;
+    z-index: $Z_INTERVIEW_DETAIL_CAPTION;
+
+    .intvwDetail-Contents_CaptionNumTxtInner {
+      position: absolute;
+      top: -119px;
+      left: 39px;
+
+      color: #c9c8c0;
+      display: inline-block;
+      height: 100%;
+    }
+
+    .caption-Txt {
+      font-weight: 100;
+      letter-spacing: 2px;
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+      position: absolute;
+      right: 0;
+    }
+
+    .caption-Num {
+      position: absolute;
+      top: -60px;
+      right: 5px;
+
+      font-size: 18px;
+
+      &:before {
+        position: absolute;
+        right: 5px;
+        bottom: -22px;
+
+        background-color: #c9c8c0;
+        content: "";
+        display: block;
+        height: 15px;
+        width: 1px;;
+      }
+
+      &:after {
+        position: absolute;
+        right: -14px;
+        bottom: -4px;
+
+        border: 1px #c9c8c0 solid;
+        border-radius: 100%;
+        content: "";
+        display: block;
+        height: 39px;
+        width: 39px;
+      }
+    }
+  }
+  .intvwDetail-Contents_TxtWrapper {
+    position: relative;
+
+    background-color: #ffffff;
+    display: block;
+    margin-left: 13.6%;
+    z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+    .intvwDetail-Contents_TxtInner {
+      position: relative;
+
+      padding: 95px 116px 68px;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+      .intvwDetail-Contents_Ttl {
+        margin-bottom: 33px;
+        h2 {
+          color: $interview_Detail_H2_Blue;
+          font-size: 32px;
+          margin-bottom: 0;
+        }
+      }
+      .intvwDetail-Contents_Body {
+        p {
+          font-size: 15px;
+          letter-spacing: -0.5px;
+          line-height: 2.3;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_PC) {
+  .intvwDetail-Contents_Caption03Wrapper {
+    position: relative;
+
+    margin-bottom: 97px;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      position: absolute;
+      bottom: -30px;
+      left: 40px;
+
+      background-color: $Yellow;
+      display: block;
+      height: 235px;
+      width: 483px;
+      z-index: $Z_INTERVIEW_DETAIL_CAPTION;
+
+      .intvwDetail-Contents_CaptionNumTxtInner {
+        position: absolute;
+        top: -165px;
+        left: 39px;
+
+        color: #c9c8c0;
+        display: inline-block;
+        height: 100%;
+      }
+
+      .caption-Txt {
+        font-weight: 100;
+        letter-spacing: 2px;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+      }
+
+      .caption-Num {
+        position: absolute;
+        top: -60px;
+        right: 5px;
+
+        font-size: 18px;
+
+        &:before {
+          position: absolute;
+          right: 5px;
+          bottom: -22px;
+
+          background-color: #c9c8c0;
+          content: "";
+          display: block;
+          height: 15px;
+          width: 1px;;
+        }
+
+        &:after {
+          position: absolute;
+          right: -14px;
+          bottom: -4px;
+
+          border: 1px #c9c8c0 solid;
+          border-radius: 100%;
+          content: "";
+          display: block;
+          height: 39px;
+          width: 39px;
+        }
+      }
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      position: relative;
+
+      background-color: #ffffff;
+      display: block;
+      margin-left: 13.6%;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+      .intvwDetail-Contents_TxtInner {
+        position: relative;
+
+        padding: 95px 116px 68px;
+        z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 33px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 32px;
+            margin-bottom: 0;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 2.3;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .intvwDetail-Contents_Caption03Wrapper {
+    position: relative;
+
+    margin-bottom: 97px;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      display: none;
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      position: relative;
+
+      background-color: #ffffff;
+      display: block;
+      margin-left: 0;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+      .intvwDetail-Contents_TxtInner {
+        position: relative;
+
+        padding: 50px 60px;
+        z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 33px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 30px;
+            margin-bottom: 0;
+          }
+          br {
+            display: none;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .intvwDetail-Contents_Caption03Wrapper {
+    position: relative;
+
+    margin-bottom: 7px;
+    .intvwDetail-Contents_CaptionNumTxtWrapper {
+      display: none;
+    }
+    .intvwDetail-Contents_TxtWrapper {
+      position: relative;
+
+      background-color: #ffffff;
+      display: block;
+      margin-left: 0;
+      z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+
+      .intvwDetail-Contents_TxtInner {
+        position: relative;
+
+        padding: 42px 32px 37px;
+        z-index: $Z_INTERVIEW_DETAIL_TXT_ON_YELLOW;
+        .intvwDetail-Contents_Ttl {
+          margin-bottom: 33px;
+          h2 {
+            color: $interview_Detail_H2_Blue;
+            font-size: 23px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+          }
+          br {
+            display: none;
+          }
+        }
+        .intvwDetail-Contents_Body {
+          p {
+            font-size: 16px;
+            letter-spacing: 0.9px;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "社員インタビュー｜ミニストップ｜井上 由希恵";
+  - var pageDescription= "社員名のインタビューはこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "社員インタビュー,ミニストップ,井上 由希恵";
+  //- Optional
+  - var pageOgpTitle= "社員インタビュー｜ミニストップ｜井上 由希恵";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "interview/02.html";
+
+block content
+  // contents
+  .intvw-Wrapper
+    .intvwDetail-Mv.intvwDetail-MvInoue
+      .intvwDetail-Mv_Inner
+        .intvwDetail-Mv_Ttl
+          .intvwDetail-Mv_TtlWrapper
+            .intvwDetail-Mv_TtlWrapperCover
+              p 結婚・出産しても仕事を<br class="add-Line">続けていきたい。
+          .intvwDetail-Mv_TtlWrapper
+            .intvwDetail-Mv_TtlWrapperCover
+              p 中途入社でも溶け込みやすい<br class="add-Line">「人柄のいい文化」がある。
+      .intvwDetail-Mv_WhoWrapper
+        .intvwDetail-Mv_WhoInner
+          .intvwDetail-Mv_WhoName
+            h1 #{inoue}
+          .intvwDetail-Mv_WhoPosition
+            p #{inoue_dep}
+            p #{inoue_team}
+            p #{inoue_position}
+          .intvwDetail-Mv_WhoYear
+            p 2006年入社
+
+  .intvwDetail-Contents
+    .intvwDetail-Contents_Inner
+
+      .intvwDetail-Contents_Caption01Wrapper
+        .intvwDetail-Contents_CaptionNumTxtWrapper
+          .intvwDetail-Contents_CaptionNumTxtInner
+            span.caption-Txt CAPTION
+            span.caption-Num 1
+        .intvwDetail-Contents_TxtWrapper
+          .intvwDetail-Contents_TxtInner
+            .intvwDetail-Contents_Ttl
+              h2 「最大限の仕事」<br class="add-Line">というこだわり。
+            .intvwDetail-Contents_Body
+              p レジにて注文するドリンク全般が担当です。例えば、コーヒーの味を決めるだけではなく、コーヒーで使用する資材や備品、コーヒーマシンの選定等、ドリンクに関わる全ての事柄が対象です。コーヒーは嗜好品になりますので、人によって「おいしい」と感じる味が違うということが一番難しいです。そのため、コーヒーの味を決めるときは沢山の方にアンケートを実施しています。自分に出来る限りの「最大限の仕事」をするというのがこだわりです。
+        .intvwDetail-Contents_ImgWrapper
+          img(src='../assets/img/interview/detail/inoue-caption01.png', alt='コミュニケーションをしているミニストップの社員')
+
+      .intvwDetail-Contents_Caption02Wrapper
+        .intvwDetail-Contents_CaptionNumTxtWrapper
+          .intvwDetail-Contents_CaptionNumTxtInner
+            span.caption-Txt CAPTION
+            span.caption-Num 2
+        .intvwDetail-Contents_TxtWrapper
+          .intvwDetail-Contents_TxtInner
+            .intvwDetail-Contents_Ttl
+              h2 大手がやらない「奇抜なこと」ができる環境がある。
+            .intvwDetail-Contents_Body
+              p 良い意味で「小回りが効く規模」だと思います。やりたいという熱い想いがあれば、自分で変えられる可能性があります。もちろん、費用など通さなければならない稟議はありますが、大手だと何ヶ月もかかることがそこまではかからないです。言われたことをやるだけでなく、自分で変えられる点が大いにあるということは、自ら提案して事業にできる可能性があるということです。そういった仕事の広げ方や楽しみ方があります。新卒入社・中途入社問わず、オープンな環境がミニストップにはあると感じています。
+        .intvwDetail-Contents_ImgWrapper
+          img(src='../assets/img/interview/detail/inoue-caption02.png', alt='ミニストップの社員')
+
+      .intvwDetail-Contents_Caption03Wrapper
+        .intvwDetail-Contents_CaptionNumTxtWrapper
+          .intvwDetail-Contents_CaptionNumTxtInner
+            span.caption-Txt CAPTION
+            span.caption-Num 3
+        .intvwDetail-Contents_TxtWrapper
+          .intvwDetail-Contents_TxtInner
+            .intvwDetail-Contents_Ttl
+              h2 時間がないことを言い訳にしない。
+            .intvwDetail-Contents_Body
+              p 子どもがいると働ける時間は限られます。しかし、時間がない事を言い訳にすると「他責」になり、仕事は面白くなくなってしまいます。仕事を中途半端にしないためにも、どうやれば終わるか、いつまでに何が必要かを常に考えています。ミニストップには、育児をしながら働いている社員が沢山います。先輩社員に相談しながら、自分にあった方法で仕事をしています。育児をしながら働いている先輩社員たちは、責任感の強い方が多く、時間がない事を言い訳にしていない姿はとてもかっこいいと思います。
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='./01.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p #{ootsuka}
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='./03.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p #{noguchi}
+
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("interview/02");</script>

@@ -1,0 +1,127 @@
+.st-Entry {
+  position: relative;
+  //領域全体を覆う
+  height: 924px;
+  background: url("../img/top/entry-bg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+
+  .st-Entry_Inner {
+    padding: 82px;
+    text-align: center;
+
+    .st-Entry_TtlWrapper {
+      min-width: 880px;
+      text-align: center;
+
+      .st-Entry_Ttl {
+        margin-bottom: 15px;
+      }
+
+      .st-Entry_SubTtl {
+        margin-bottom: 40px;
+        font-weight: 600;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .st-Entry_BtbWrapper {
+      min-width: 880px;
+      padding-left: 35px;
+
+      .btn {
+        display: inline-block;
+        width: 61%;
+        margin-right: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Entry {
+    height: 874px;
+    background: url("../img/top/entry-bg.png")no-repeat right top 0;
+    background-size: cover;
+
+    .st-Entry_Inner {
+      padding: 52px 82px 0;
+
+      .st-Entry_TtlWrapper {
+        min-width: 100%;
+
+        .st-Entry_Ttl {
+          margin-bottom: 15px;
+        }
+
+        .st-Entry_SubTtl {
+          margin-bottom: 20px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .st-Entry_BtbWrapper {
+        min-width: 100%;
+        padding-left: 0;
+
+        .btn {
+          display: inline-block;
+          width: 70%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .st-Entry {
+    height: 730px;
+    background: url("../img/top/entry-bg.png")no-repeat right -250px top 0;
+    background-size: cover;
+
+    .st-Entry_Inner {
+      padding: 52px 14px 0;
+
+      .st-Entry_TtlWrapper {
+        min-width: 100%;
+
+        .st-Entry_Ttl {
+          margin-bottom: 15px;
+          img {
+            width: 50%;
+          }
+        }
+
+        .st-Entry_SubTtl {
+          margin-bottom: 20px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .st-Entry_BtbWrapper {
+        min-width: 100%;
+        padding-left: 0;
+
+        .btn {
+          display: inline-block;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

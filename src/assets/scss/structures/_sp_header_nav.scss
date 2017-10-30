@@ -1,0 +1,404 @@
+/* Menu */
+body {
+  overflow: visible;
+  height: auto;
+}
+
+body.show-menu {
+  overflow: hidden;
+  height: 100%;
+}
+
+@include min-screen($BREAK_POINT_TABLET) {
+  .menu-btn, .menu {
+    display: none;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .menu-btn {
+    /* ヘッダー 三本線ボタンのカバー */
+    .menu-btn-wrapper {
+      position: fixed;
+      z-index: $Z_SP_NAVI_MENU_BTN_WRAPPER;
+      top: 20px;
+      right: 18px;
+      width: 47px;
+      height: 47px;
+      -webkit-transition: all 400ms;
+              transition: all 400ms;
+      border-radius: 50%;
+      background-color: $Blue;
+    }
+  }
+
+  .clicked {
+    -webkit-transition: all 900ms;
+            transition: all 900ms;
+    transform: rotate(360deg);
+  }
+
+  /* ヘッダー 三本線ボタンのカバー下の実際の部分 */
+  .menu-btn span {
+    position: absolute;
+    z-index: $Z_SP_NAVI_MENU_BTN;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 21px;
+    height: 2px;
+    margin-left: -11px;
+    -webkit-transition: all 400ms cubic-bezier(0.4, 0.39, 0.37, 1.11);
+            transition: all 400ms cubic-bezier(0.4, 0.39, 0.37, 1.11);
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .menu-btn .top {
+    margin-top: -7px;
+  }
+
+  .show-menu {
+    .menu-btn {
+      span {
+        background-color: $Blue;
+      }
+    }
+    .menu-btn-wrapper {
+      background-color: #fff;
+    }
+  }
+
+  .show-menu .menu-btn .top {
+    margin-top: 0;
+    transform: translate(0%, -50%) rotate(45deg);
+  }
+
+  .menu-btn .btm {
+    margin-top: 7px;
+  }
+
+  .show-menu .menu-btn {
+    background-color: rgba(27, 27, 27, 0);
+  }
+
+  .show-menu .menu-btn .btm {
+    margin-top: 0;
+    -webkit-transform: translate(0%, -50%) rotate(-45deg);
+            transform: translate(0%, -50%) rotate(-45deg);
+  }
+
+  .show-menu .menu-btn .mid {
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+    opacity: 0;
+  }
+
+  /* ヘッダー ボタン押したらびよんと伸びる背景 */
+  .menu-overlay {
+    position: fixed;
+    z-index: $Z_SP_NAVI_MENU_OVERLAY;
+    top: 0;
+    right: -100%;
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    background-color: $Blue;
+
+    // clip: circle(0px at 400px 0px);
+    // -webkit-transition: 0.5s cubic-bezier(0.4, 0.39, 0.37, 1.11);
+    //         transition: 0.5s cubic-bezier(0.4, 0.39, 0.37, 1.11);
+    // background-image: -webkit-linear-gradient(to right, #0f1985, #0f1985);
+    // background-image:    -moz-linear-gradient(to right, #0f1985, #0f1985);
+    // background-image:         linear-gradient(to right, #0f1985, #0f1985);
+    //
+    // -webkit-clip-path: circle(0px at 400px 0px);
+    //         clip-path: circle(0px at 400px 0px);
+  }
+
+  .show-menu .menu-overlay {
+    right: 0;
+    visibility: visible;
+
+    // -webkit-clip-path: circle(200% at 285px 35px);
+    //         clip-path: circle(200% at 285px 35px);
+  }
+
+  /* ボタンを押したら出てくる実際のヘッダーナビ部分のtxt */
+  .menu {
+    position: fixed;
+    z-index: $Z_SP_NAVI_MENU;
+    top: 10px;
+    left: -100%;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #fff;
+
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      font-size: 16px;
+
+      .entry-Btn {
+        width: 100%;
+        background-color: #111;
+        // margin-left: -60px;
+
+        a {
+          display: block;
+          padding: 30px 0;
+        }
+      }
+    }
+
+    li {
+      margin-bottom: 15px;
+      padding: 0;
+      -webkit-transition: all 0.4s;
+              transition: all 0.4s;
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: 0;
+
+      .menu-Logo {
+        margin-bottom: 20px;
+      }
+    }
+
+    .menu_Link {
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: "\f138";
+        font-family: FontAwesome;
+        font-size: 17px;
+        color: #fff;
+      }
+      span {
+        font-size: 14px;
+        color: #6178bd;
+      }
+    }
+
+    .menu_Ttl {
+      margin-bottom: -1px;
+      padding-top: 10px;
+      color: #6178bd;
+    }
+
+    .menu_Entry {
+      position: relative;
+      width: 280px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border-radius: 50px;
+      background-color: $Yellow;
+
+      &:before {
+        position: absolute;
+        top: 23px;
+        left: 90px;
+        width: 10%;
+        height: 100%;
+        content: "";
+        background: url(../img/header/entry-iqon.png) 0 0 no-repeat transparent;
+        background-size: 13px 15px;
+      }
+
+      a {
+        display: block;
+        padding: 20px 50px 20px 90px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        color: #111;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .show-menu .menu li {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+
+  .show-menu {
+    .menu {
+      left: 0;
+      .appear01 {
+        -webkit-transition-delay: 0.2s;
+                transition-delay: 0.2s;
+      }
+      .appear02 {
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s;
+      }
+      .appear03 {
+        -webkit-transition-delay: 0.30s;
+                transition-delay: 0.30s;
+      }
+      .appear04 {
+        -webkit-transition-delay: 0.35s;
+                transition-delay: 0.35s;
+      }
+      .appear05 {
+        -webkit-transition-delay: 0.4s;
+                transition-delay: 0.4s;
+      }
+      .appear06 {
+        -webkit-transition-delay: 0.45s;
+                transition-delay: 0.45s;
+      }
+      .appear07 {
+        -webkit-transition-delay: 0.5s;
+                transition-delay: 0.5s;
+      }
+      .appear08 {
+        -webkit-transition-delay: 0.55s;
+                transition-delay: 0.55s;
+      }
+      .appear09 {
+        -webkit-transition-delay: 0.6s;
+                transition-delay: 0.6s;
+      }
+      .appear10 {
+        -webkit-transition-delay: 0.65s;
+                transition-delay: 0.65s;
+      }
+      .appear11 {
+        -webkit-transition-delay: 0.70s;
+                transition-delay: 0.70s;
+      }
+      .appear12 {
+        -webkit-transition-delay: 0.75s;
+                transition-delay: 0.75s;
+      }
+      .appear13 {
+        -webkit-transition-delay: 0.8s;
+                transition-delay: 0.8s;
+      }
+      .appear14 {
+        -webkit-transition-delay: 0.85s;
+                transition-delay: 0.85s;
+      }
+      .appear15 {
+        -webkit-transition-delay: 0.9s;
+                transition-delay: 0.9s;
+      }
+      .appear16 {
+        -webkit-transition-delay: 0.95s;
+                transition-delay: 0.95s;
+      }
+      .appear17 {
+        -webkit-transition-delay: 1s;
+                transition-delay: 1s;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6)  {
+  .menu {
+    padding-left: 15px;
+    font-size: 1.4rem;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      font-size: 14px;
+
+      .entry-Btn {
+        width: 100%;
+        background-color: #111;
+        // margin-left: -60px;
+
+        a {
+          display: block;
+          padding: 30px 0;
+        }
+      }
+    }
+
+    li {
+      margin-bottom: 15px;
+      padding: 0;
+      -webkit-transition: all 0.4s;
+              transition: all 0.4s;
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: 0;
+
+      .menu-Logo {
+        margin-bottom: 20px;
+      }
+    }
+
+    .menu_Link {
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: "\f138";
+        font-family: FontAwesome;
+        font-size: 17px;
+        color: #fff;
+      }
+      span {
+        font-size: 12px;
+        color: #6178bd;
+      }
+    }
+
+    .menu_Entry {
+      position: relative;
+      width: 240px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border-radius: 50px;
+      background-color: $Yellow;
+
+      &:before {
+        position: absolute;
+        top: 23px;
+        left: 75px;
+        width: 10%;
+        height: 100%;
+        content: "";
+        background: url(../img/header/entry-iqon.png) 0 0 no-repeat transparent;
+        background-size: 13px 15px;
+      }
+
+      a {
+        display: block;
+        padding: 20px 65px 20px 90px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        color: #111;
+      }
+    }
+  }
+}

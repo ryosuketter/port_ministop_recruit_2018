@@ -1,0 +1,449 @@
+.cmpny-Wrapper {
+  background-color: $Bg;
+}
+
+@include min-screen($BREAK_POINT_TABLET) {
+  .cmpny-Wrapper {
+    min-width: 1024px;
+  }
+}
+
+.cmpny-Mv {
+  //領域全体を覆う
+  height: 578px;
+  background: url("../img/aboutus/cmpny-mv_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+
+  .cmpny-Mv_Inner {
+    padding: 245px 15% 200px;
+
+    .cmpny-Mv_Ttl {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .cmpny-Mv_Subttl {
+      font-size: 24px;
+      font-weight: 600;
+      color: $Blue;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .cmpny-Mv {
+    height: 378px;
+
+    .cmpny-Mv_Inner {
+      padding: 145px 15% 50px;
+
+      .cmpny-Mv_Ttl {
+        img {
+          width: 182px;
+        }
+      }
+
+      .cmpny-Mv_Subttl {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .cmpny-Mv {
+    height: 282px;
+
+    .cmpny-Mv_Inner {
+      padding: 97px 15% 50px;
+    }
+  }
+}
+
+.cmpny-Contents {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 15px;
+  background-color: #fff;
+
+  &:before {
+    position: absolute;
+    z-index: $Z_CONTENTS_TOP_BLOCK;
+    top: -59px;
+    width: 100%;
+    height: 60px;
+    content: "";
+    background-color: #fff;
+  }
+  .cmpny-Contents_Inner {
+    padding: 37px 100px 71px;
+
+    .cmpny-Contents_Table {
+      table {
+        text-align: left;
+        tr {
+          th, td {
+            position: relative;
+            font-weight: 300;
+          }
+          th.last {
+            position: relative;
+            &:after {
+              position: absolute;
+              bottom: 1px;
+              left: -1px;
+              display: block;
+              width: 90%;
+              content: "";
+              border-bottom: 1px solid #e1e1e3;
+            }
+          }
+          td.last {
+            position: relative;
+            &:after {
+              position: absolute;
+              bottom: 1px;
+              left: -1px;
+              display: block;
+              width: 100%;
+              content: "";
+              border-bottom: 1px solid #e1e1e3;
+            }
+          }
+          th {
+            width: 19%;
+            padding: 30px 23px 24px;
+
+            &:before {
+              position: absolute;
+              top: 1px;
+              left: -1px;
+              display: block;
+              width: 90%;
+              content: "";
+              border-top: 1px solid #e1e1e3;
+            }
+          }
+          td {
+            width: 81%;
+            padding: 29px 60px;
+
+            &:before {
+              position: absolute;
+              top: 1px;
+              left: -1px;
+              display: block;
+              width: 100%;
+              content: "";
+              border-top: 1px solid #e1e1e3;
+            }
+          }
+
+          a {
+            position: relative;
+            padding-right: 36px;
+            text-decoration: none;
+            color: $Blue;
+
+            i {
+              // padding-left: 10px;
+              // font-size: 11px;
+              // color: $Blue;
+              display: none;
+            }
+
+            .external-Link {
+              width: 12px;
+              height: 9px;
+              margin-bottom: 2px;
+              margin-left: 6px;
+              font-size: 12px;
+
+              fill: $Blue;
+            }
+          }
+
+          .add-Line {
+            display: none;
+          }
+
+          ul {
+            padding-left: 0;
+
+            li.cmpny-Contents_TableTtl {
+              margin-bottom: 6px;
+              padding-left: 0px;
+              &:before {
+                position: absolute;
+                left: 0px;
+                display: inline-block;
+                content: "";
+              }
+            }
+            li {
+              position: relative;
+              margin-bottom: 6px;
+              padding-left: 12px;
+              list-style: none;
+              letter-spacing: 0.8px;
+
+              &:before {
+                position: absolute;
+                left: -1px;
+                display: inline-block;
+                content: "・";
+              }
+
+              &:first-child {
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($CONTENT_WIDTH) {
+  .cmpny-Contents {
+    max-width: 1024px;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .cmpny-Contents {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-size: 14px;
+
+    &:before {
+      display: none;
+    }
+    .cmpny-Contents_Inner {
+      padding: 37px 30px 50px;
+
+      .cmpny-Contents_Table {
+        table {
+          text-align: left;
+          tr {
+            th, td {
+              position: relative;
+              font-weight: 300;
+            }
+            th.last {
+              position: relative;
+              &:after {
+                position: absolute;
+                bottom: 1px;
+                left: -1px;
+                display: block;
+                width: 90%;
+                content: "";
+                border-bottom: 1px solid #e1e1e3;
+              }
+            }
+            td.last {
+              position: relative;
+              &:after {
+                position: absolute;
+                bottom: 1px;
+                left: -1px;
+                display: block;
+                width: 100%;
+                content: "";
+                border-bottom: 1px solid #e1e1e3;
+              }
+            }
+            th {
+              width: 19%;
+              padding: 29px 28px;
+
+              &:before {
+                position: absolute;
+                top: 1px;
+                left: -1px;
+                display: block;
+                width: 90%;
+                content: "";
+                border-top: 1px solid #e1e1e3;
+              }
+            }
+            td {
+              width: 81%;
+              padding: 29px 60px;
+
+              &:before {
+                position: absolute;
+                top: 1px;
+                left: -1px;
+                display: block;
+                width: 100%;
+                content: "";
+                border-top: 1px solid #e1e1e3;
+              }
+            }
+
+            a {
+              position: relative;
+              padding-right: 36px;
+              text-decoration: none;
+              color: $Blue;
+
+              i {
+                padding-left: 10px;
+                font-size: 11px;
+                color: $Blue;
+              }
+            }
+
+            .add-Line {
+              display: none;
+            }
+
+            ul {
+              padding-left: 0;
+              li {
+                position: relative;
+                margin-bottom: 6px;
+                padding-left: 12px;
+                list-style: none;
+                letter-spacing: 0.8px;
+
+                &:before {
+                  position: absolute;
+                  left: -1px;
+                  display: inline-block;
+                  content: "・";
+                }
+
+                &:first-child {
+                  margin-top: 4px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .cmpny-Contents {
+    position: relative;
+    min-width: 300px;
+    max-width: 1024px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+
+    &:before {
+      display: none;
+    }
+    .cmpny-Contents_Inner {
+      padding: 46px 35px;
+      .cmpny-Contents_Table {
+        table {
+          margin: 0 auto;
+          text-align: left;
+          tr {
+            th, td {
+              position: relative;
+              padding: 12px 8px;
+              font-weight: 300;
+            }
+            th.last {
+              position: relative;
+              &:after {
+                position: absolute;
+                bottom: 1px;
+                left: -1px;
+                display: block;
+                width: 90%;
+              }
+            }
+            td.last {
+              position: relative;
+              &:after {
+                position: absolute;
+                bottom: 1px;
+                left: -1px;
+                display: block;
+                width: 100%;
+              }
+            }
+            th {
+              width: 30%;
+
+              &:before {
+                position: absolute;
+                top: 1px;
+                left: -1px;
+                display: block;
+                width: 90%;
+              }
+            }
+            td {
+              width: 70%;
+
+              &:before {
+                position: absolute;
+                top: 1px;
+                left: -1px;
+                display: block;
+                width: 100%;
+                content: "";
+                border-top: 1px solid #e1e1e3;
+              }
+            }
+
+            a {
+              position: relative;
+              padding-right: 2px;
+              font-size: 13px;
+
+              i {
+                padding-left: 10px;
+                font-size: 10px;
+              }
+
+              .external-Link {
+                width: 12px;
+                height: 9px;
+                margin-bottom: 0;
+                margin-left: 1px;
+                font-size: 12px;
+
+                fill: $Blue;
+              }
+            }
+
+            .add-Line {
+              display: block;
+            }
+
+            ul {
+              padding-left: 0;
+              li {
+                margin-bottom: 6px;
+                list-style: none;
+                letter-spacing: 0.8px;
+
+                &:first-child {
+                  margin-top: 4px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

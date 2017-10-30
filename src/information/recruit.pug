@@ -1,0 +1,455 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "採用情報｜ミニストップ｜採用サイト";
+  - var pageDescription= "採用情報はこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、社員インタビュー、研修制度などをご紹介しています。";
+  - var pageKeywords= "採用情報,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "採用情報｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "information/recruit.html";
+
+block content
+  // contents
+  .ircrt-Wrapper
+    .ircrt-Mv
+      .ircrt-Mv_Inner
+        .ircrt-Mv_Ttl
+          h1
+            img(src='../assets/img/information/mv-ttl.png', alt='タイトル 採用情報')
+        .ircrt-Mv_Subttl
+          p 採用情報
+    .ircrt-Contents
+      .ircrt-Contents_Inner
+        .ircrt-Contents_BlockLink
+          .ircrt-Contents_BlockLinkInner
+            .ircrt-Contents_BlockLinkSec
+              a(href='#freshers' data-scroll) フレッシャーズ採用
+            .ircrt-Contents_BlockLinkSec
+              a(href='#career' data-scroll) キャリア採用
+            .ircrt-Contents_BlockLinkSec
+              a(href='#handi' data-scroll) 障がい者採用
+            .ircrt-Contents_BlockLinkSec
+              a(href='#intern' data-scroll) インターンシップ
+        .ircrt-Contents_BlockLink
+          .ircrt-Contents_BlockLinkInner
+            .ircrt-Contents_BlockLinkSec
+              a(href='#parttime' data-scroll) アルバイト採用
+            .ircrt-Contents_BlockLinkSec
+              a(href='#parttime-intern' data-scroll) バイターン採用
+            .ircrt-Contents_BlockLinkSec
+              a(href='#contractor' data-scroll) 契約社員募集(開店アシスタント）
+
+        .ircrt-Contents_Block#freshers
+          .ircrt-Contents_Ttl
+            h2 フレッシャーズ採用
+          .ircrt-Contents_SubTtl
+            h3 総合職
+          .ircrt-Contents_TableWrapper
+            table
+              tr
+                th 応募資格
+                td 当社が設定する新入社員基準（給与・研修等）で入社を希望する方。<br class="add-Line">卒業年度は問いません。（既卒も可）
+              tr
+                th 募集学科
+                td 全学部・全学科
+              tr
+                th 提出書類
+                td 当社指定エントリーシート、卒業（見込）証明書、成績証明書、健康診断書
+              tr
+                th 仕事内容
+                td 入社後、約2年間直営店にて勤務。その後加盟店の経営指導員（ストアアドバイザー）をはじめとし、「安全・安心」を追求し続ける商品開発、ミニストップの成長を支える店舗開発他、さまざまな職種についていただきます。
+              tr
+                th 事業所
+                td 本部：千葉県千葉市（海浜幕張）<br>地区事務所：青森、宮城、茨城、群馬、埼玉、東京、神奈川、静岡、愛知、大阪、香川、福岡 等
+              tr
+                th 給与
+                td 大学院卒月給215,000円<br>大学卒月給210,000円<br>短大卒・専門学校卒月給198,000円
+              tr
+                th 諸手当
+                td 超過勤務手当（時間外、深夜、休日出勤）、通勤手当、外勤手当、子女教育手当、住宅助成金等
+              tr
+                th 昇給
+                td 社内昇格試験 合格により
+              tr
+                th 賞与
+                td 年2回（7月、12月）
+              tr
+                th 休日・休暇
+                td 週休2日制（月8日～9日）を基準として年間休日117日、<br class="add-Line">年次有給休暇、連続休日制度（年2回の長期休暇）、慶弔休暇、リフレッシュホリデー、病気休暇、配偶者<br class="add-Line">出産休暇、看護休暇他
+              tr
+                th 出産・育児
+                td 産前産後休暇（産前、産後計16週）、育児休職（3年）、育児勤務制度
+              tr
+                th 福利厚生
+                td 一般財形制度、財形年金制度、社員持株制度、社宅制度、イオングッドライフクラブ（大型共済会制度）
+              tr
+                th 保険
+                td 健康保険、厚生年金、雇用保険、労災保険
+              tr
+                th 選考の流れ
+                td
+                  img.pc-img(src='../assets/img/information/ircrt-flow.png', alt='選考の流れのイメージ図')
+                  img.sp-img(src='../assets/img/information/ircrt-flow_sp.png', alt='選考の流れのイメージ図')
+          .ircrt-Contents_BtnWrapper.btn_EntryWrapper
+            a.btn_EntryEx#mp_fresh(href='https://job.rikunabi.com/2019/company/r758600062/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'fresher_entry');") ENTRY
+              include ../_includes/_external_link
+
+        .ircrt-Contents_Block#career
+          .ircrt-Contents_Ttl
+            h2 キャリア採用
+          .ircrt-Contents_SubTtl
+            h3 ストアアドバイザー=SA（店舗経営指導員）
+          .ircrt-Contents_TableWrapper
+            table
+              tr
+                th 仕事内容
+                td 入社後ミニストップの直営店で勤務し、その後、ミニストップ加盟店の店舗経営指導を行っていただきます。一人6店～8店舗担当し、加盟店の売上向上策立案や従業員教育等経営のコンサルティングを行います。
+              tr
+                th 応募資格
+                td 年齢・職務経験不問 ※定年制あり<br>※要普通自動車運転免許
+                  span 登録販売者有資格者歓迎
+              tr
+                th 雇用形態
+                td 正社員
+              tr
+                th 給与
+                td 経験・能力を考慮の上、当社規定により決定
+              tr
+                th 諸手当
+                td 超過勤務手当（時間外、深夜、休日出勤）、通勤手当、外勤手当、住宅助成金等
+              tr
+                th 昇給
+                td 昇格試験あり
+              tr
+                th 賞与
+                td 年2回（7月、12月）
+              tr
+                th 勤務地
+                td ミニストップ出店エリア
+              tr
+                th 勤務時間
+                td 原則　9:00～18:00 ※店舗勤務期間中は24時間3交替のシフト制
+              tr
+                th 休日・休暇
+                td 週休2日制（月8日～9日）を基準として年間休日117日、<br class="add-Line">年次有給休暇、連続休日制度（年2回の長期休暇）、慶弔休暇、リフレッシュホリデー、病気休暇、配偶者出産休暇、看護休暇他
+              tr
+                th 福利厚生
+                td 一般財形制度、財形年金制度、社員持株制度、社宅制度、イオングッドライフクラブ（大型共済会制度）
+              tr
+                th 保険
+                td 健康保険、厚生年金、雇用保険、労災保険
+              tr
+                th 選考方法
+                td 書類選考⇒一次選考⇒最終選考
+              tr
+                th 応募方法
+                td 下記連絡先へお問い合せください。<br>ミニストップ株式会社　人事部　人材育成チーム<br>電話：0120-32-2432　又は　043-212-6626
+
+        .ircrt-Contents_Block
+          .ircrt-Contents_SubTtl
+            h3 ドラッグコンビニ店長候補
+          .ircrt-Contents_TableWrapper
+            table
+              tr
+                th 仕事内容
+                td 入社後ミニストップのドラッグコンビニで勤務いたします。
+              tr
+                th 応募資格
+                td 年齢・職務経験不問 ※定年制あり<br>※要普通自動車運転免許
+                  span 登録販売者有資格者歓迎
+              tr
+                th 雇用形態
+                td 正社員
+              tr
+                th 給与
+                td 経験・能力を考慮の上、当社規定により決定
+              tr
+                th 諸手当
+                td 超過勤務手当（時間外、深夜、休日出勤）、通勤手当、外勤手当、住宅助成金等
+              tr
+                th 昇給
+                td 昇格試験あり
+              tr
+                th 賞与
+                td 年2回（7月、12月）
+              tr
+                th 勤務地
+                td ミニストップ出店エリア
+              tr
+                th 勤務時間
+                td 原則　9:00～18:00 ※店舗勤務期間中は24時間3交替のシフト制
+              tr
+                th 休日・休暇
+                td 週休2日制（月8日～9日）を基準として年間休日117日、<br class="add-Line">年次有給休暇、連続休日制度（年2回の長期休暇）、慶弔休暇、リフレッシュホリデー、病気休暇、配偶者出産休暇、看護休暇他
+              tr
+                th 福利厚生
+                td 一般財形制度、財形年金制度、社員持株制度、社宅制度、イオングッドライフクラブ（大型共済会制度）
+              tr
+                th 保険
+                td 健康保険、厚生年金、雇用保険、労災保険
+              tr
+                th 選考方法
+                td 書類選考⇒一次選考⇒最終選考
+              tr
+                th 応募方法
+                td 下記連絡先へお問い合せください。<br>ミニストップ株式会社　人事部　人材育成チーム<br>電話：0120-32-2432　又は　043-212-6626
+
+        .ircrt-Contents_Block
+          .ircrt-Contents_SubTtl
+            h3 店舗開発部員
+          .ircrt-Contents_TableWrapper
+            table.table-column3
+              tr
+                th 仕事内容
+                td(colspan='2') 新規加盟店の開拓<br>ミニストップ店舗出店のための物件・立地の調査・確保。ミニストップを経営していただくオーナー候補者の発掘
+              tr
+                th 応募資格
+                td(colspan='2') 年齢不問 ※要普通自動車運転免許
+                  span コンビニ業界の店舗開発経験者ならびにカフェチェーン等小型店舗のフランチャイズ店店舗開発経験者歓迎。
+                  span その他、不動産・銀行・証券・生損保等経験者、法人営業経験者も歓迎いたします。
+              tr
+                th 勤務時間
+                td(colspan='2') 原則　9:00～18:00 ※店舗勤務期間中は24時間3交替のシフト制
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 雇用形態
+                td.ircrt-Contents_TableHd 正社員
+                td.ircrt-Contents_TableHd 契約制社員
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 給与
+                td.ircrt-Contents_TableDt 経験・能力を考慮の上、当社規定により決定
+                td.ircrt-Contents_TableDt 固定給（月額35万円）
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 賞与
+                td.ircrt-Contents_TableDt 年2回（7月、12月）
+                td.ircrt-Contents_TableDt 契約件数に応じたインセンティブ評価年2回（7月・12月）
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh モデル年収
+                td.ircrt-Contents_TableDt 35歳中堅社員　年収600万円
+                  span ※経験・成績により年収1000万円以上可能
+                td.ircrt-Contents_TableDt 契約件数6件の場合　年収690万円
+                  span ※経験・成績により年収1000万円以上可能
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 諸手当
+                td.ircrt-Contents_TableDt 超過勤務手当（時間外、深夜、休日出勤）、通勤手当、外勤手当、住宅助成金等
+                td.ircrt-Contents_TableDt 交通費実費支給
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 昇給
+                td.ircrt-Contents_TableDt 昇格試験あり
+                td.ircrt-Contents_TableDt なし
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 勤務地
+                td.ircrt-Contents_TableDt ミニストップ出店エリア
+                td.ircrt-Contents_TableDt 原則現住所を基準に決定
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 休日・休暇
+                td.ircrt-Contents_TableDt 週休2日制（月8日～9日）を基準として年間休日117日、年次有給休暇、連続休日制度（年2回の長期休暇）、慶弔休暇、リフレッシュホリデー、病気休暇、配偶者出産休暇、看護休暇他
+                td.ircrt-Contents_TableDt 年間107日、年次有給休暇、慶弔休暇等
+              tr.ircrt-Contents_TableTr
+                th.ircrt-Contents_TableTh 福利厚生
+                td.ircrt-Contents_TableDt 一般財形制度、財形年金制度、社員持株制度、社宅制度、イオングッドライフクラブ（大型共済会制度）
+                td.ircrt-Contents_TableDt イオングッドライフクラブ（大型共済会制度）
+              tr.adjust
+                th 保険
+                td(colspan='2') 健康保険、厚生年金、雇用保険、労災保険
+              tr
+                th 選考方法
+                td(colspan='2') 書類選考⇒一次選考⇒最終選考
+              tr
+                th 応募方法
+                td(colspan='2') 下記連絡先へお問い合せください。<br>ミニストップ株式会社　人事部　人材育成チーム<br>電話：0120-32-2432　又は　043-212-6626
+
+        .ircrt-Contents_Block#handi
+          .ircrt-Contents_Ttl
+            h2 障がい者採用
+          .ircrt-Contents_SubTtl
+            h3 事務・店舗
+          .ircrt-Contents_TableWrapper
+            table
+              tr
+                th 雇用形態
+                td （1） 正社員<br>（2） 契約制社員
+              tr
+                th 勤務地
+                td 本部：イオンタワー（JR京葉線、海浜幕張駅）<br>幕張事務所（JR京葉線、海浜幕張駅）<br>関東加盟店会計事務所（JR千葉駅）<br>東北地区事務所（JR仙台駅）<br>東海地区事務所（JR名古屋駅）<br>近畿地区事務所（地下鉄御堂筋線　本町駅）
+              tr
+                th 給与
+                td 当社規定による
+              tr
+                th 諸手当
+                td 超過勤務手当（時間外、深夜、休日出勤）、通勤手当、外勤手当、住宅助成金等
+              tr
+                th 昇給
+                td 社内昇格試験 合格により
+              tr
+                th 賞与
+                td 年2回（7月、12月）
+              tr
+                th 休日・休暇
+                td 週休2日制（月8日～9日）を基準として年間休日117日、<br>年次有給休暇、連続休日制度（年2回の長期休暇）、慶弔休暇、リフレッシュホリデー、病気休暇、配偶者出産休暇、看護休暇他
+              tr
+                th 出産・育児
+                td 産前産後休暇（産前、産後計16週）、育児休職（3年）、育児勤務制度
+              tr
+                th 福利厚生
+                td 一般財形制度、財形年金制度、社員持株制度、社宅制度、イオングッドライフクラブ（大型共済会制度）
+              tr
+                th 保険
+                td 健康保険、厚生年金、雇用保険、労災保険
+              tr
+                th 選考方法
+                td 書類選考⇒一次選考⇒最終選考
+              tr
+                th 応募方法
+                td （1） 履歴書（写真貼付）、（2） 職務経歴書、（3） 障がい者手帳のコピー<br>以上3点を下記宛先までご郵送ください。
+                  span.color-black 〒261-8540
+                  span.color-black.color-black_sp 千葉県千葉市美浜区中瀬1-5-1　イオンタワー6階
+                  span.color-black.color-black_sp ミニストップ株式会社　人事部　人材育成チーム
+                  span.color-black.color-black_sp 電話：0120-32-2432　又は　043-212-6626
+                  span.color-black.color-black_sp ※ご不明な点は人事部人材育成チームまでお電話又はEメールにてご連絡ください。
+
+        .ircrt-Contents_Block#intern
+          .ircrt-Contents_Ttl
+            h2 インターンシップ
+          .ircrt-Contents_SubTtl
+            h3 インターンシップ2日間
+              //- span 通学型は2回に分けて実施
+          .ircrt-Contents_TableWrapper
+            table
+              tr
+                th 最終アウトプット
+                td ミニストップ1店舗の売上向上策を役員に対して提案する
+              tr
+                th プログラム
+                td
+                  span.program 1. イオン・ミニストップの事業理解
+                  span.program 2. マーケティングを活用した店舗戦略立案（グループワーク）
+                  span.program 3. 売上向上のためのインストアマーチャンダイジング
+                  span.program 4. 競合に勝つためのストアコンパリゾン
+                  span.program 5. 最終プレゼンに向けた学習、フィールドワーク、分析
+                  span.program 全体を通してマーケティングを主題にしており、３Ｃ分析をフィールドワークを通じて体験、最終的な提案にまとめ最後は執行役員、人事部長へプレゼン
+              tr
+                th 参加特典
+                td
+                  span.program インターンシップ参加者には、毎年春と秋に開催される加盟店舗向けイベント「商品売場勉強会」へ招待いたします。
+                  span.program.insentive イベント内容
+                  ul
+                    li 今後のミニストップの戦略や商品トレンド、新サービスなどを学ぶ
+                    li 展示ブース、プレゼンテーションブース、を実際に見て、聞いて、食べてミニストップのことを学ぶ
+          .ircrt-Contents_BtnWrapper.btn_EntryWrapper
+            a.btn_EntryEx(href='https://job.rikunabi.com/2019/company/r758600062/internship/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'internship_entry');") ENTRY
+              include ../_includes/_external_link
+
+        //- .ircrt-Contents_Block
+        //-   .ircrt-Contents_SubTtl
+        //-     h3 商品売場勉強会
+        //-   .ircrt-Contents_TableWrapper
+        //-     table
+        //-       tr
+        //-         th 内容
+        //-         td
+        //-           ul
+        //-             li 加盟店向けイベントへの招待。
+        //-             li 今後のミニストップの戦略や商品トレンド、新サービスなどを学ぶ。
+        //-             li 展示ブース、プレゼンテーションブース、を実際に見て、聞いて、食べて、ミニストップのことを学ぶ。
+        //-   .ircrt-Contents_BtnWrapper.btn_EntryWrapper
+        //-     a.btn_Entry(href='https://job.rikunabi.com/2019/company/r758600062/internship/' target="_blank") ENTRY
+
+        .ircrt-Contents_Block#parttime
+          .ircrt-Contents_Ttl.not-Border
+            h2 アルバイト採用
+          .ircrt-Contents_BannerWrapper
+            a(href='https://ministop-arbeit.jp/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'parttime_entry');")
+              img.pc-img(src='../assets/img/information/ircrt-banner_parttime.png', alt='ミニストップのアルバイト情報')
+              img.sp-img(src='../assets/img/information/ircrt-banner_parttime_sp.png', alt='ミニストップのアルバイト情報')
+
+        .ircrt-Contents_Block#parttime-intern
+          .ircrt-Contents_Ttl.not-Border
+            h2 バイターン採用
+          .ircrt-Contents_TxtWrapper
+            a(href='https://www.ministop-baitern.com/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'baitern_entry');") バイターン採用情報はこちらです
+              include ../_includes/_external_link
+
+        .ircrt-Contents_Block#contractor
+          .ircrt-Contents_Ttl
+            h2 契約社員募集
+          .ircrt-Contents_SubTtl
+            h3 開店アシスタント
+          .ircrt-Contents_TableWrapper
+            table.table-column5
+              tr
+                th 募集職種
+                td 開店アシスタント(開店サポート業務)
+              tr
+                th 仕事内容
+                td ①新店開店の補佐(商品陳列・販促物設置・従業員教育補佐)<br>②手づくりおにぎりトレーナー<br>③直営店・旗艦店のシフト応援
+              tr
+                th 応募資格
+                td 年齢・性別不問<br>※CVS経験者歓迎　学生不可
+              tr
+                th 雇用形態
+                td 契約制社員
+              tr
+                th 資格制度
+                td JP職(入社時)⇒MP職(半年～2年)⇒SP職⇒社員登用(3年目～)<br>※社内資格制度の名称です
+              tr
+                th 給与
+                td 資格給・能力給・責任者給を当社規程により支給
+              tr
+                th 諸手当
+                td 地域手当、在宅手当、住宅助成金、社宅等、時間外労働、深夜勤務
+              tr
+                th 昇給
+                td 昇給試験あり<br>※社員登用制度あり
+              tr
+                th 賞与
+                td SP資格以上から支給(年2回　7月・12月)
+              tr
+                th 勤務地
+                td ミニストップ出店エリア<br>※開店のない時期は最寄研修店勤務
+              tr
+                th 勤務時間
+                td 24時間のシフト制
+              tr
+                th 休日・休暇
+                td 週40時間勤務、週休2日制(月8日～9日)を基準とし年間117日。<br>勤務6ヶ月経過時より有給休暇の付与。
+              tr
+                th 福利厚生
+                td イオングットライフクラブ(大型共済会制度)、社宅制度(転居を伴う)
+              tr
+                th 保険
+                td 健康保険、雇用保険、労災保険
+              tr
+                th 選考方法
+                td 1次面接⇒最終2次面接⇒内定
+              tr
+                th 応募方法
+                td 下記連絡先へお問い合わせください。<br>ミニストップ(株)ストアオペレーション部　ストアオペレーションチーム<br>電話:043-212-8732(月～金:9時～17時)
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='./welfare.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p 制度紹介
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='../')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p TOPページ
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("information/recruit");</script>
+
+  <script>smoothScroll.init();</script>

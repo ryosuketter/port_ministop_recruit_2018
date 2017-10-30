@@ -1,0 +1,102 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "社員インタビュー｜ミニストップ｜野口 穣";
+  - var pageDescription= "社員名のインタビューはこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "社員インタビュー,ミニストップ,野口 穣";
+  //- Optional
+  - var pageOgpTitle= "社員インタビュー｜ミニストップ｜野口 穣";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "interview/03.html";
+
+block content
+  // contents
+  .intvw-Wrapper
+    .intvwDetail-Mv.intvwDetail-MvNoguchi
+      .intvwDetail-Mv_Inner
+        .intvwDetail-Mv_Ttl
+          .intvwDetail-Mv_TtlWrapper
+            .intvwDetail-Mv_TtlWrapperCover
+              p お互いが幸せになるために<br class="add-Line">「こだわり」を持つ。
+          .intvwDetail-Mv_TtlWrapper
+            .intvwDetail-Mv_TtlWrapperCover
+              p 「野口だからできた」と<br class="add-Line">言われるようになりたい。
+      .intvwDetail-Mv_WhoWrapper
+        .intvwDetail-Mv_WhoInner
+          .intvwDetail-Mv_WhoName
+            h1 #{noguchi}
+          .intvwDetail-Mv_WhoPosition
+            p #{noguchi_dep}
+            p #{noguchi_team}
+            p #{noguchi_position}
+          .intvwDetail-Mv_WhoYear
+            p 2004年入社
+
+  .intvwDetail-Contents
+    .intvwDetail-Contents_Inner
+
+      .intvwDetail-Contents_Caption01Wrapper
+        .intvwDetail-Contents_CaptionNumTxtWrapper
+          .intvwDetail-Contents_CaptionNumTxtInner
+            span.caption-Txt CAPTION
+            span.caption-Num 1
+        .intvwDetail-Contents_TxtWrapper
+          .intvwDetail-Contents_TxtInner
+            .intvwDetail-Contents_Ttl
+              h2 交渉するのは「人対人」。
+            .intvwDetail-Contents_Body
+              p コンビニエンスストアを建設する用地は、各チェーンも担当者が動いています。地権者との交渉においては数字での交渉だけではドライになってしまいます。相手の要望をいち早く捉え、相手の立場に立って発言や対応することを常に意識しています。交渉するのは「人対人」です。他チェーンと競合関係になる事が多いですが、地権者にこちらを向いてもらえるよう、入念な調査を行なった上で目標達成までの戦略を持って交渉に臨んでいます。
+        .intvwDetail-Contents_ImgWrapper
+          img(src='../assets/img/interview/detail/noguchi-caption01.png', alt='コミュニケーションをしているミニストップの社員')
+
+      .intvwDetail-Contents_Caption02Wrapper
+        .intvwDetail-Contents_CaptionNumTxtWrapper
+          .intvwDetail-Contents_CaptionNumTxtInner
+            span.caption-Txt CAPTION
+            span.caption-Num 2
+        .intvwDetail-Contents_TxtWrapper
+          .intvwDetail-Contents_TxtInner
+            .intvwDetail-Contents_Ttl
+              h2.adjust03 二人三脚の「運命共同体」だからこそ厳しく。
+            .intvwDetail-Contents_Body
+              p ミニストップのフランチャイズビジネスは「共存共栄」を掲げています。新規加盟店候補の方には、コンビニエンスストアの競争環境含め「厳しいお話」をします。どんな困難があっても揺るがない「経営者としての心構え」と「将来の目標」が必要です。オーナーさまをサポートする私たちも、障がいにぶつかった時、妥協せず取り組み、周囲の協力を仰ぎながら仕事を推し進めていく姿勢を大切にしています。頑張る加盟店や社員に対して、バックアップを惜しまない姿勢と「人としての優しさ」をミニストップは持っています。
+        .intvwDetail-Contents_ImgWrapper
+          img(src='../assets/img/interview/detail/noguchi-caption02.png', alt='ミニストップの社員')
+
+      .intvwDetail-Contents_Caption03Wrapper
+        .intvwDetail-Contents_CaptionNumTxtWrapper
+          .intvwDetail-Contents_CaptionNumTxtInner
+            span.caption-Txt CAPTION
+            span.caption-Num 3
+        .intvwDetail-Contents_TxtWrapper
+          .intvwDetail-Contents_TxtInner
+            .intvwDetail-Contents_Ttl
+              h2 失敗しても、次に生かすことを常に考える。
+            .intvwDetail-Contents_Body
+              p 私は、コンビニエンスストアの中で一番ミニストップが好きという理由で入社しました。ミニストップは、助けてほしいと言えば助けてくれる人が近くにいる会社です。上司との風通しも良く、言いたいことも年次関係なく発言できます。でもだからこそ、受け身では何もできず、成長も少なくなってしまいます。考えたことを行動に移していく姿勢が大切です。自分から周囲に助言を求め、確認さえすれば、仕事の自由度合いも多いです。私もこれからもっと「難しい案件」に挑戦していきたいと思っています。
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='./02.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p #{inoue}
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='../information/welfare.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p 制度紹介
+
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("interview/03");</script>

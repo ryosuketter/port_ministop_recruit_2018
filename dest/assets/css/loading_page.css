@@ -1,0 +1,24 @@
+.loading-Bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0f1985;
+  height: 4px;
+  -webkit-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+  width: 0; }
+
+.loading-Img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+
+.st-header_WrapperTop, .js-Slide_Contents, .menu-btn-wrapper {
+  display: none; }
+
+@media screen and (max-width: 667px) {
+  .loading-Img {
+    width: 12%; } }

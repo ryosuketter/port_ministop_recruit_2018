@@ -1,0 +1,562 @@
+.intvw-Wrapper {
+  background-color: $Bg;
+}
+
+@include min-screen($BREAK_POINT_TABLET) {
+  .intvw-Wrapper {
+    min-width: 1024px;
+  }
+}
+
+.intvw-Mv {
+  background: url("../img/interview/intvw-mv_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+  //領域全体を覆う
+  height: 578px;
+
+  .intvw-Mv_Inner {
+    padding: 245px 15% 200px;
+
+    .intvw-Mv_Ttl {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .intvw-Mv_Subttl {
+      color: $Blue;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .intvw-Wrapper {
+    background-color: #ffffff;
+  }
+
+  .intvw-Mv {
+    height: 378px;
+
+    .intvw-Mv_Inner {
+      padding: 145px 15% 50px;
+
+      .intvw-Mv_Ttl {
+        img {
+          width: 182px;
+        }
+      }
+
+      .intvw-Mv_Subttl {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .intvw-Mv {
+    height: 282px;
+
+    .intvw-Mv_Inner {
+      padding: 97px 15% 50px;
+    }
+  }
+}
+
+.intvw-Contents {
+  position: relative;
+
+  background-color: #ffffff;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  max-width: 1200px;
+
+  &:before {
+    position: absolute;
+    top: -59px;
+
+    background-color: #ffffff;
+    content: "";
+    height: 60px;
+    width: 100%;
+    z-index: $Z_CONTENTS_TOP_BLOCK;
+  }
+
+  .intvw-Contents_Inner {
+    margin: 0 auto;
+    padding: 40px 0 110px 17px;
+    width: 1065px;
+
+    .intvw-TtlWrapper {
+      margin: 0 auto;
+      text-align: center;
+
+      .intvw-Ttl {
+        margin-bottom: 15px;
+      }
+
+      .intvw-SubTtl {
+        font-weight: 600;
+        margin-bottom: 60px;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .intvw-MemberWrapper {
+      position: relative;
+
+      @extend .clearfix;
+      height: 306px;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      max-width: 1050px;
+      min-width: 950px;
+
+      .intvw-MemberLeft, .intvw-MemberRight {
+        a {
+          display: inline-block;
+          height: 306px;
+          overflow: hidden;
+          width: 470px;
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+            .i-down {
+              &.before {
+                right: -55px;
+
+                opacity: 1;
+              }
+              &.after {
+                right: -3px;
+
+                opacity: 1;
+              }
+            }
+          }
+          img {
+            transition: 0.7s ease;
+          }
+        }
+      }
+
+      .intvw-MemberLeft {
+        position: absolute;
+        left: 0;
+      }
+
+      .intvw-MemberRight {
+        position: absolute;
+        right: 0;
+        bottom: -85px;
+      }
+
+      .intvw-MemberName {
+        position: absolute;
+        bottom: 111px;
+        left: -26px;
+
+        background-color: $Yellow;
+        font-size: 24px;
+        letter-spacing: 2.7px;
+        padding: 5px 12px;
+        z-index: $Z_MEMBER_NAME;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .intvw-MemberTeam,
+      .intvw-MemberPosition,
+      .intvw-MemberDep {
+        position: absolute;
+        left: -26px;
+
+        background-color: $Blue;
+        color: #ffffff;
+        display: inline;
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 5px 12px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .intvw-MemberDep {
+        // bottom: $top-Interview_MemberTeam_Bottom;
+        bottom: 71px;
+      }
+
+      .intvw-MemberTeam {
+        // bottom: $top-Interview_MemberTeam_Bottom -28px;
+        bottom: 47px;
+      }
+
+      .intvw-MemberPosition {
+        // bottom: $top-Interview_MemberTeam_Bottom - 48px;
+        bottom: 23px;
+      }
+    }
+  }
+}
+
+@include max-screen($CONTENT_WIDTH) {
+  .intvw-Contents {
+    position: relative;
+
+    background-color: #ffffff;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    max-width: 1024px;
+
+    &:before {
+      position: absolute;
+      top: -59px;
+
+      background-color: #ffffff;
+      content: "";
+      height: 60px;
+      width: 100%;
+      z-index: $Z_CONTENTS_TOP_BLOCK;
+    }
+
+    .intvw-Contents_Inner {
+      margin: 0 auto;
+      padding: 40px 0 110px 0;
+      width: 994px;
+
+      .intvw-TtlWrapper {
+        margin: 0 auto;
+        text-align: center;
+
+        .intvw-Ttl {
+          margin-bottom: 15px;
+        }
+
+        .intvw-SubTtl {
+          font-weight: 600;
+          margin-bottom: 60px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .intvw-MemberWrapper {
+        position: relative;
+
+        height: 306px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        max-width: 1050px;
+        min-width: 950px;
+
+        .intvw-MemberLeft, .intvw-MemberRight {
+          a {
+            display: inline-block;
+            height: 306px;
+            overflow: hidden;
+            width: 470px;
+            &:hover {
+              img {
+                transform: scale(1.05);
+              }
+              .i-down {
+                &.before {
+                  right: -55px;
+
+                  opacity: 1;
+                }
+                &.after {
+                  right: -1px;
+
+                  opacity: 1;
+                }
+              }
+            }
+            img {
+              transition: 0.7s ease;
+            }
+          }
+        }
+
+        .intvw-MemberLeft {
+          position: absolute;
+          left: 0;
+        }
+
+        .intvw-MemberRight {
+          position: absolute;
+          right: 0;
+          bottom: -85px;
+        }
+
+        .intvw-MemberName {
+          position: absolute;
+          bottom: 111px;
+          left: -26px;
+
+          background-color: $Yellow;
+          font-size: 24px;
+          letter-spacing: 2.7px;
+          padding: 5px 12px;
+          z-index: $Z_MEMBER_NAME;
+        }
+
+        .intvw-MemberTeam, .intvw-MemberPosition {
+          position: absolute;
+          left: -26px;
+
+          background-color: $Blue;
+          color: #ffffff;
+          display: inline;
+          font-size: 13px;
+          letter-spacing: 2px;
+          padding: 5px 12px;
+        }
+
+        .intvw-MemberDep {
+          // bottom: $top-Interview_MemberTeam_Bottom;
+          bottom: 71px;
+        }
+
+        .intvw-MemberTeam {
+          // bottom: $top-Interview_MemberTeam_Bottom -28px;
+          bottom: 47px;
+        }
+
+        .intvw-MemberPosition {
+          // bottom: $top-Interview_MemberTeam_Bottom - 48px;
+          bottom: 23px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .intvw-Contents {
+    position: relative;
+
+    background-color: #ffffff;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    max-width: 667px;
+
+    &:before {
+      display: none;
+    }
+
+    .intvw-Contents_Inner {
+      margin: 0 auto;
+      padding: 40px 0 110px 0;
+      width: 667px;
+
+      .intvw-TtlWrapper {
+        margin: 0 auto;
+        text-align: center;
+
+        .intvw-Ttl {
+          margin-bottom: 15px;
+        }
+
+        .intvw-SubTtl {
+          font-weight: 600;
+          margin-bottom: 60px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .intvw-MemberWrapper {
+        position: relative;
+
+        height: 100%;
+        margin-bottom: 0;
+        max-width: 1024px;
+        min-width: 567px;
+        text-align: center;
+
+        .intvw-MemberLeft {
+          position: relative;
+
+          margin: 0 auto 90px;
+          max-width: 470px;
+        }
+
+        .intvw-MemberRight {
+          position: relative;
+          bottom: 0;
+
+          margin: 0 auto 90px;
+          max-width: 470px;
+        }
+
+        .intvw-MemberName {
+          position: absolute;
+          bottom: 111px;
+          left: -26px;
+
+          background-color: $Yellow;
+          font-size: 24px;
+          letter-spacing: 2.7px;
+          padding: 5px 12px;
+        }
+
+        .intvw-MemberTeam, .intvw-MemberPosition {
+          position: absolute;
+          left: -26px;
+
+          background-color: $Blue;
+          color: #ffffff;
+          display: inline;
+          font-size: 13px;
+          letter-spacing: 2px;
+          padding: 5px 12px;
+        }
+
+        .intvw-MemberDep {
+          // bottom: $top-Interview_MemberTeam_Bottom;
+          bottom: 71px;
+        }
+
+        .intvw-MemberTeam {
+          // bottom: $top-Interview_MemberTeam_Bottom -28px;
+          bottom: 47px;
+        }
+
+        .intvw-MemberPosition {
+          // bottom: $top-Interview_MemberTeam_Bottom - 48px;
+          bottom: 23px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .intvw-Contents {
+    position: relative;
+
+    background-color: #ffffff;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 400px;
+
+    &:before {
+      position: absolute;
+      top: -59px;
+
+      background-color: #ffffff;
+      content: "";
+      height: 60px;
+      width: 100%;
+      z-index: $Z_CONTENTS_TOP_BLOCK;
+    }
+
+    .intvw-Contents_Inner {
+      margin: 0 auto;
+      padding: 45px 0 11px 0;
+      max-width: 320px;
+
+      .intvw-TtlWrapper {
+        margin: 0 auto;
+        text-align: center;
+
+        .intvw-Ttl {
+          margin-bottom: 15px;
+        }
+
+        .intvw-SubTtl {
+          font-weight: 600;
+          margin-bottom: 60px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .intvw-MemberWrapper {
+        position: relative;
+
+        height: 100%;
+        margin-bottom: 0;
+        min-width: 300px;
+        padding: 0 14px 0 22px;
+        text-align: center;
+
+        .intvw-MemberLeft {
+          margin: 0 auto 45px;
+          a {
+            height: auto;
+            width: 100%;
+          }
+          img {
+            width: 90%;
+          }
+        }
+
+        .intvw-MemberRight {
+          margin: 0 auto 45px;
+          a {
+            height: auto;
+            width: 100%;
+          }
+          img {
+            width: 90%;
+          }
+        }
+
+        .intvw-MemberName {
+          bottom: 136px - $interview_MemberName_SP;
+          left: -14px;
+
+          font-size: 20px;
+          letter-spacing: 1.0px;
+          padding: 3px 8px;
+        }
+
+        .intvw-MemberTeam,
+        .intvw-MemberPosition,
+        .intvw-MemberDep {
+          left: -14px;
+
+          font-size: 12px;
+          letter-spacing: 1px;
+          padding: 4px 10px;
+        }
+
+        .intvw-MemberDep {
+          bottom: $top-Interview_MemberTeam_Bottom - $interview_MemberName_SP + 32;
+        }
+
+        .intvw-MemberTeam {
+          bottom: $top-Interview_MemberTeam_Bottom - $interview_MemberName_SP + 8;
+        }
+
+        .intvw-MemberPosition {
+          bottom: $top-Interview_MemberTeam_Bottom - $interview_MemberName_SP - 15;
+        }
+      }
+    }
+  }
+}

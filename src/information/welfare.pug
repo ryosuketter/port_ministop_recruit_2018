@@ -1,0 +1,251 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "制度紹介｜ミニストップ｜採用サイト";
+  - var pageDescription= "制度紹介はこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、社員インタビュー、採用情報などをご紹介しています。";
+  - var pageKeywords= "制度紹介,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "制度紹介｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "information/welfare.html";
+
+block content
+  // contents
+  .wlfr-Wrapper
+    .wlfr-Mv
+      .wlfr-Mv_Inner
+        .wlfr-Mv_Ttl
+          h1
+            img(src='../assets/img/information/mv-ttl.png', alt='タイトル 制度紹介')
+        .wlfr-Mv_Subttl
+          p 制度紹介
+    .wlfr-Contents
+      .wlfr-Contents_Inner
+        .wlfr-Contents_Block
+          .wlfr-Contents_BlockInner
+            .wlfr-Contents_MainTtl
+              h2 人事制度
+            .wlfr-Contents_SubTtl
+              h3 ミニストップ人事ポリシー
+            .wlfr-Contents_List
+              ul
+                li 従業員が安心して働き、働きがいを持ち続ける事ができる。
+                li 従業員が絶えず成長し、能力を発揮して、成果を出し続けることができる企業環境の創造。
+                li シンプル（simple）会社にとって、従業員にとって分かりやすく
+                li クリア（Clear）すべてがオープンで透明性が高い
+                li フェア（Fair）何事にも公平・公正
+            .wlfr-Contents_SubTtl
+              h3 社内資格登用制度
+            .wlfr-Contents_SubTtl_Content
+              h4 社内資格に応じて役割、賃金が変わります。
+              img.pc-img(src='../assets/img/information/wlfr-grade.png', alt='社内資格登用制度のイメージ図')
+              img.sp-img(src='../assets/img/information/wlfr-grade_sp.png', alt='社内資格登用制度のイメージ図')
+            .wlfr-Contents_SubTtl_Content
+              h4 昇格最短イメージ
+              img.pc-img(src='../assets/img/information/wlfr-gradeupimg.png', alt='昇格最短イメージ図')
+              img.sp-img(src='../assets/img/information/wlfr-gradeupimg_sp.png', alt='昇格最短イメージ図')
+            .wlfr-Contents_SubTtl_Content
+              h4 各資格の登用選抜概要
+              p 人事考課、筆記試験、面接試験等により決定します。
+            .wlfr-Contents_Tbl
+              table
+                tr
+                  th.column1
+                  th.column_head.colimn_line.column2 資格
+                  th.column_head.colimn_line 役職
+                  th.column_head.colimn_line 位置づけ
+                tr
+                  th.row_head.column1 S職
+                  td.colimn_line.column2 SS<br>SB<br>SM
+                  td.colimn_line 本部長、副本部長他<br>部長他<br>Mgr
+                  td.colimn_line
+                    | ・ 知識・経験・スキルを発揮し、全社利益へ貢献する職層
+                    br
+                    | ・ ビジョン・戦略構築力を高める職層
+                    br
+                    | ・ 事業を推進・革新し、全社利益に貢献する職層
+                tr
+                  th.row_head.column1 M職
+                  td.colimn_line.column2 MB<br>MM<br>MR<br>M
+                  td.colimn_line 部長他<br>Mgr<br>担当者（管理職資格有り）<br>担当者
+                  td.colimn_line
+                    | ・ 培ったスキルを成果として発揮し、さらに高度な知識経験を積む職層
+                    br
+                    | ・ 部下を指導統率し、部門としての成果をあげる職層
+                tr
+                  th.row_head.column1 J職
+                  td.colimn_line.column2 J5<br>J4<br>J3・J
+                  td.colimn_line 担当者<br>担当者<br>担当者
+                  td.colimn_line
+                    | ・ 業務経験を積み、仕事を覚え、自律遂行する職層
+                    br
+                    | ・ グループリーダーとして率先して業務遂行できる職層
+                tr
+                  th.row_head.column1 P職
+                  td.colimn_line.column2 PS<br>P
+                  td.colimn_line スーパープロフェッショナル<br>プロフェッショナル
+                  td.colimn_line
+                    | ・ 特定分野にて培った専門知識・能力を用いて、会社利益へ貢献する職層
+                    br
+                    | ・ 特定分野における最新技術、情報、能力を常に磨き続ける職層
+            .wlfr-Contents_TblSp
+              p.grade S職
+              table
+                tr
+                  th.column1 資格
+                  th.column2 役職
+                tr
+                  td SS
+                  td 本部長、副本部長他
+                tr
+                  td SB
+                  td 部長他
+                tr
+                  td SM
+                  td Mgr
+              p.position 位置づけ
+                ul
+                  li 知識・経験・スキルを発揮し、全社利益へ貢献する職層
+                  li ビジョン・戦略構築力を高める職層
+                  li 事業を推進・革新し、全社利益に貢献する職層
+            .wlfr-Contents_TblSp
+              p.grade M職
+              table
+                tr
+                  th.column1 資格
+                  th.column2 役職
+                tr
+                  td MB
+                  td 部長他
+                tr
+                  td MM
+                  td Mgr
+                tr
+                  td MR
+                  td 担当者（管理職資格有り）
+                tr
+                  td M
+                  td 担当者
+              p.position 位置づけ
+                ul
+                  li 培ったスキルを成果として発揮し、さらに高度な知識経験を積む職層
+                  li 部下を指導統率し、部門としての成果をあげる職層
+            .wlfr-Contents_TblSp
+              p.grade J職
+              table
+                tr
+                  th.column1 資格
+                  th.column2 役職
+                tr
+                  td J5
+                  td 担当者
+                tr
+                  td J4
+                  td 担当者
+                tr
+                  td J3・J
+                  td 担当者
+              p.position 位置づけ
+                ul
+                  li 培ったスキルを成果として発揮し、さらに高度な知識経験を積む職層
+                  li 部下を指導統率し、部門としての成果をあげる職層
+            .wlfr-Contents_TblSp
+              p.grade P職
+              table
+                tr
+                  th.column1 資格
+                  th.column2 役職
+                tr
+                  td PS
+                  td スーパープロフェッショナル
+                tr
+                  td P
+                  td プロフェッショナル
+              p.position 位置づけ
+                ul
+                  li 特定分野にて培った専門知識・能力を用いて、会社利益へ貢献する職層
+                  li 特定分野における最新技術、情報、能力を常に磨き続ける職層
+
+            .wlfr-Contents_SubTtl
+              h3 自己申告制度
+              p 毎年1回、現職務の満足度、今後の希望部署、現職場の状況について申告することができます。<br>将来の自分のビジョン・キャリア形成を自己実現する制度です。
+            .wlfr-Contents_SubTtl
+              h3 社内公募制度
+              p 公募実施部門に対して異動の立候補を行う制度です。<br>書類選考、面接等により決定します。<br>面接を通過した後、異動候補者として該当部署異動までの間、自己啓発に励みます。<br>自分のキャリアを形成していく人事制度の一つです。<br>
+        .wlfr-Contents_Block
+          .wlfr-Contents_BlockInner
+            .wlfr-Contents_MainTtl
+              h2 福利厚生
+            .wlfr-Contents_SubTtl
+              h3 住居に関する制度
+            .wlfr-Contents_ContentsWrapper
+              h4 住宅助成金制度
+              h5 賃貸住宅助成金
+              p 自己賃貸住居に対し、家賃を補助いたします（助成金額は地域により異なります）。<br>扶養家族を有する方は31,500～50,000円、独身者は10,000円。
+              h5 持ち家住宅助成金
+              p 扶養家族を有する持ち家の方へ、全国一律 21,500円支給いたします。
+            .wlfr-Contents_ContentsWrapper
+              h4 寮・社宅制度
+              p 会社が賃貸物件を借り上げ、独身寮・社宅として社員に提供いたします。
+              h5 社宅費
+              p 社内資格により 16,300円～34,000円。<br>入居家族2人以上26,500円、入居家族4人以上33,300円、入居家族6人以上41,600円。
+            .wlfr-Contents_SubTtl.sp_adjust.pc_adjust
+              h3.h3adjust 出産・育児に関する制度
+            .wlfr-Contents_h5Wrapper
+              h5 配偶者出産休暇制度
+              p 配偶者が出産する際に前後1ヵ月間で3日の特別有給休暇を取得できます。
+            .wlfr-Contents_h5Wrapper
+              h5 育児休職制度
+              p 子が満3歳に到達した後の最初の4月20日までの連続した期間取得できます（第2子以降1歳）。
+            .wlfr-Contents_h5Wrapper
+              h5 出産祝金
+              p 本人および配偶者が子どもを出産した場合に一人の子につき5万円を支給いたします。
+            .wlfr-Contents_h5Wrapper
+              h5 育児休職復帰祝金
+              p 育児休職から職務復帰した社員には一人の子につき10万円を支給いたします。
+            .wlfr-Contents_h5Wrapper
+              h5 看護休暇制度
+              p 小学校就学前までの子を看護するための特別有給休暇を年5日間取得出できます。
+            h4.h4adjust 育児勤務制度
+            .wlfr-Contents_h5Wrapper
+              h5 短時間コース
+              p 1日の労働時間を短縮して勤務することが出来ます。子が小学校3年生に進級した後の最初の4月20日までの期間取得できます。
+            .wlfr-Contents_h5Wrapper
+              h5 複合コース
+              p 時間勤務コース適用後、短時間勤務コースを取得できます。
+            .wlfr-Contents_h5Wrapper
+              h5 時間勤務コース
+              p 雇用形態を臨時社員に一時変更し、週の労働時間20時間以上に設定し勤務します。子が満10歳に到達する日まで取得できます。
+            h4.h4adjust 休暇に関する制度
+            .wlfr-Contents_h5Wrapper
+              h5 有給休暇
+              p 年次有給休暇、連続休日制度（年2回の長期休暇）、赴任休暇、慶弔休暇、配偶者出産休暇、看護休暇、病気休暇、リフレッシュホリデー
+            h4.h4adjust 総合共済制度
+            .wlfr-Contents_h5Wrapper
+              h5 イオングッドライフクラブ
+              p グループで働く人たちの総合共済制度です。慶事、弔事への対応や被災時の見舞金の給付、育児や介護をされている会員の支援、各種相談窓口やセミナーの運営をおこなっています。また、リゾート（宿泊）施設やテーマパーク・遊園地を割引料金で利用できます。
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='../interview/03.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p #{noguchi}
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='./recruit.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p 採用情報
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("information/welfare");</script>

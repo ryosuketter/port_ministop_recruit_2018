@@ -1,0 +1,37 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "社員インタビュー｜ミニストップ｜櫻井 誠";
+  - var pageDescription= "社員名のインタビューはこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "社員インタビュー,ミニストップ,櫻井 誠";
+  //- Optional
+  - var pageOgpTitle= "社員インタビュー｜ミニストップ｜櫻井 誠";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "interview/04.html";
+
+block content
+  // contents
+  .test
+    p #{sakuai} interview/04.html
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='./03.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p #{noguchi}
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='../information/welfare.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p 制度紹介
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("interview/04");</script>

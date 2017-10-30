@@ -1,0 +1,109 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "社員インタビュー｜ミニストップ｜採用サイト";
+  - var pageDescription= "社員インタビューはこちらです。ミニストップ株式会社の採用サイトです。コンセプトメッセージ、採用担当者からのメッセージ、ミニストップの特長、会社概要、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "社員インタビュー,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "社員インタビュー｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "interview/index.html";
+
+block content
+  // contents
+  .intvw-Wrapper
+    .intvw-Mv
+      .intvw-Mv_Inner
+        .intvw-Mv_Ttl
+          h1
+            img(src='../assets/img/interview/mv-ttl.png', alt='タイトル 社員インタビュー')
+        .intvw-Mv_Subttl
+          p 社員インタビュー
+    .intvw-Contents
+      .intvw-Contents_Inner
+        .intvw-MemberWrapper
+          .intvw-MemberLeft
+            a.animsition-link(href='./01.html')
+              img(src='../assets/img/interview/index-ootsuka.png', alt='ミニストップの社員')
+              .button
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+              .intvw-MemberName
+                p #{ootsuka}
+              .intvw-MemberDep
+                p #{ootsuka_dep}
+              .intvw-MemberTeam
+                p #{ootsuka_team}
+              .intvw-MemberPosition
+                p #{ootsuka_position}
+          .intvw-MemberRight
+            a.animsition-link(href='./02.html')
+              img(src='../assets/img/interview/index-inoue.png', alt='ミニストップの社員')
+              .button
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+              .intvw-MemberName
+                p #{inoue}
+              .intvw-MemberDep
+                p #{inoue_dep}
+              .intvw-MemberTeam
+                p #{inoue_team}
+              .intvw-MemberPosition
+                p #{inoue_position}
+        .intvw-MemberWrapper
+          .intvw-MemberLeft
+            a.animsition-link(href='./03.html')
+              img(src='../assets/img/interview/index-noguchi.png', alt='ミニストップの社員')
+              .button
+                span.button-Cover
+                  span.i.i-down.before
+                  span.i.i-down.after
+              .intvw-MemberName
+                p #{noguchi}
+              .intvw-MemberDep
+                p #{noguchi_dep}
+              .intvw-MemberTeam
+                p #{noguchi_team}
+              .intvw-MemberPosition
+                p #{noguchi_position}
+          //- .intvw-MemberRight
+          //-   a(href='./04.html')
+          //-     img(src='../assets/img/interview/index-sakurai.png', alt='ミニストップの社員')
+          //-     .button
+          //-       span.button-Cover
+          //-         span.i.i-down.before
+          //-         span.i.i-down.after
+          //-     .intvw-MemberName
+          //-       p #{sakurai}
+          //-     .intvw-MemberTeam
+          //-       p #{sakurai_team}
+          //-     .intvw-MemberPosition
+          //-       p #{sakurai_position}
+
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='../aboutus/company.html')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p 会社概要
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='./01.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p #{ootsuka}
+
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("interview/index");</script>

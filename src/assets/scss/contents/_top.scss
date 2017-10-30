@@ -1,0 +1,1145 @@
+.top-Wrapper {
+  background-color: #fff;
+}
+
+.top-Mv {
+  .top-Mv_Inner {
+    position: relative;
+
+    .top-Mv_TxtWrapper {
+      position: absolute;
+      top: 26%;
+      display: block;
+      width: 100%;
+      padding-left: 115px;
+
+      @include screen(1025px, 1300px) {
+        top: 10%;
+      }
+      @include max-screen($BREAK_POINT_PC_1500) {
+        top: 10%;
+        padding-left: 100px;
+      }
+      @include min-screen(1800px) {
+        top: 9%;
+        padding-left: 100px;
+      }
+    }
+
+    .top-Mv_SubTtl {
+      position: relative;
+      z-index: $Z_TOP_PC_MV_TTL;
+      display: inline-block;
+      margin-bottom: 32px;
+      padding: 9px 17px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: #fff;
+      background-color: #0f1985;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .top-Mv_Ttl {
+      width: 80%;
+      margin-bottom: 20px;
+      color: $Blue;
+
+      h1, span {
+        display: inline;
+        font-size: 60px;
+        font-weight: 900;
+
+        @include max-screen($BREAK_POINT_PC) {
+          font-size: 40px;
+        }
+      }
+
+      .txt-Yellow {
+        color: $Yellow;
+      }
+
+      .sp-AddLine {
+        display: none;
+      }
+      .pc-AddLine {
+        display: block;
+      }
+    }
+
+    #top-Mv_TtlSvg {
+      position: relative;
+      z-index: $Z_TOP_PC_MV_TTL;
+      width: 58%;
+      margin-bottom: 20px;
+
+      @include max-screen($BREAK_POINT_TABLET) {
+        display: none;
+      }
+    }
+
+    #top-Mv_TtlSvgSp {
+      display: none;
+      width: 50%;
+
+      @include max-screen($BREAK_POINT_TABLET) {
+        display: block;
+      }
+    }
+
+
+    .top-Mv_Body {
+      position: relative;
+      z-index: $Z_TOP_PC_MV_TTL;
+      margin-bottom: 72px;
+      line-height: 2.5;
+      letter-spacing: 1px;
+
+      @include max-screen($BREAK_POINT_PC) {
+        margin-bottom: 40px;
+        line-height: 2;
+      }
+    }
+
+    .top-Mv_Scroll {
+      position: relative;
+      padding-top: 10px;
+      padding-left: 43px;
+      letter-spacing: 1px;
+      color: #bfc1ce;
+
+      &:after {
+        position: absolute;
+        top: 10px;
+        left: 6px;
+        display: inline-block;
+        height: 45px;
+        content: "\f078";
+        transform-origin: 8% 8%;
+        animation: passing_1 1.82s linear infinite;
+        font-family: FontAwesome;
+        color: $Blue;
+
+
+        @keyframes passing_1 {
+          0% {
+            transform: translateY(-10%);
+            opacity: 0;
+          }
+          20% {
+            transform: translateY(-2%);
+            opacity: 1;
+          }
+          80% {
+            transform: translateY(-2%);
+            opacity: 1;
+          }
+          90% {
+            transform: translateY(8%);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(9%);
+            opacity: 0;
+          }
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 39px;
+        content: "";
+        background: url(../img/top/mv-scroll.png) 0 0 no-repeat transparent;
+        background-size: 25px 39px;
+      }
+    }
+
+    .top-Mv_Img {
+      overflow: hidden;
+      height: 576px;
+      margin-bottom: -6px;
+      padding-left: 30.5%;
+      text-align: right;
+
+      position: relative;
+
+      @include screen(1751px, 1800px) {
+        height: 915px;
+      }
+      @include screen(1651px, 1700px) {
+        height: 863px;
+      }
+      @include screen(1351px, 1400px) {
+        height: 707px;
+      }
+      @include screen(1601px, 1650px) {
+        height: 837px;
+      }
+      @include screen(1201px, 1250px) {
+        height: 629px;
+      }
+      @include screen(1701px, 1750px) {
+        height: 889px;
+      }
+      @include screen(1301px, 1350px) {
+        height: 681px;
+      }
+      @include screen(1401px, 1450px) {
+        height: 733px;
+      }
+      @include screen(1451px, 1500px) {
+        height: 759px;
+      }
+      @include min-screen(1801px) {
+        height: 900px;
+      }
+      @include screen(1551px, 1600px) {
+        height: 811px;
+      }
+      @include screen(1501px, 1550px) {
+        height: 785px;
+      }
+      @include screen(1251px, 1300px) {
+        height: 655px;
+      }
+
+      img {
+        // display: none;
+        // width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include min-screen(1801px) {
+          width: 1160px;
+        }
+      }
+    }
+    .top-Mv_ImgSp {
+      display: none;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Mv {
+    //領域全体を覆う
+    // background: url("../img/top/mv.png")no-repeat right top 0;
+    //fixedはスクロール時にレイヤーを感じさせるやつ
+    //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+    // background-size: 80%;
+    .top-Mv_Inner {
+      .top-Mv_TxtWrapper {
+        position: static;
+        padding-top: 36%;
+        padding-bottom: 30px;
+        padding-left: 40px;
+      }
+
+      .top-Mv_SubTtl {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 32px;
+        padding: 6px 12px;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      .top-Mv_Ttl {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        margin-bottom: 20px;
+
+        h1, span {
+          font-size: 40px;
+        }
+
+        .sp-AddLine {
+          display: block;
+        }
+      }
+
+      // .top-Mv_Img {
+      //   display: none;
+      // }
+
+      .top-Mv_Img {
+        // position: absolute;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: 62%;
+        width: 80%;
+
+        z-index: 1;
+        display: block;
+        overflow: hidden;
+        margin-bottom: -6px;
+        padding-left: 16.5%;
+        text-align: right;
+
+        img {
+          // display: none;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .top-Mv_Body {
+        margin-bottom: 0;
+      }
+
+      .top-Mv_Scroll {
+        position: absolute;
+        right: 20px;
+        bottom: 33px;
+
+        &:after {
+          top: 13px;
+          left: 7px;
+          height: 50px;
+          transform-origin: 8% 8%;
+          font-size: 10px;
+        }
+
+        &:before {
+          position: absolute;
+          top: 2px;
+          left: 0;
+          width: 100%;
+          height: 39px;
+          content: "";
+          background: url(../img/top/mv-scroll.png) 0 0 no-repeat transparent;
+          background-size: 22px 36px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Mv {
+    //領域全体を覆う
+    // background: url("../img/top/mv.png")no-repeat right top 0;
+    //fixedはスクロール時にレイヤーを感じさせるやつ
+    //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+    // background-size: 90%;
+
+    .top-Mv_Inner {
+      .top-Mv_TxtWrapper {
+        padding-top: 46%;
+        padding-bottom: 20px;
+        padding-left: 10px;
+      }
+
+      .top-Mv_SubTtl {
+        margin-bottom: 30px;
+        padding: 4px 6px;
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+
+      .top-Mv_Ttl {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        margin-bottom: 20px;
+
+        h1, span {
+          font-size: 30px;
+        }
+
+        .sp-AddLine {
+          display: block;
+        }
+      }
+
+      .top-Mv_Img {
+        // display: none;
+        width: 90%;
+        height: 55%;
+      }
+
+      .top-Mv_ImgSp {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 59%;
+        margin-bottom: -6px;
+        padding-left: 16.5%;
+        text-align: right;
+
+        @include max-screen(599px) {
+          height: 58%;
+        }
+        @include screen(600px, 667px) {
+          height: 62%;
+        }
+
+        img {
+          display: none;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .top-Mv_Body {
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 0.1px;
+      }
+
+      .top-Mv_Scroll {
+        position: absolute;
+        right: 10px;
+        bottom: 19px;
+
+        &:after {
+          top: 13px;
+          left: 24px;
+          height: 50px;
+          transform-origin: 8% 8%;
+          font-size: 10px;
+        }
+
+        &:before {
+          position: absolute;
+          top: 2px;
+          left: 20px;
+          width: 20%;
+          height: 39px;
+          content: "";
+          background: url(../img/top/mv-scroll.png) 0 0 no-repeat transparent;
+          background-size: 18px 32px;
+        }
+      }
+    }
+  }
+}
+
+.top-News_Wrapper {
+  margin-top: 6px;
+  padding: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #fff;
+  background-color: #001a89;
+
+  $top-News_Wrapper_CommonSpace: 28px;
+
+  th {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 1px;
+  }
+
+  .top-News_TableNews {
+    padding-right: $top-News_Wrapper_CommonSpace;
+    border-right: 2px solid #fff;
+  }
+
+  .top-News_TableDate {
+    padding-left: $top-News_Wrapper_CommonSpace;
+  }
+
+  .top-News_TableContents {
+    padding-left: $top-News_Wrapper_CommonSpace;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-News_Wrapper {
+    padding: 8px 6px;
+
+    $top-News_Wrapper_CommonSpace: 14px;
+
+    th {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .top-News_TableNews {
+      padding-right: $top-News_Wrapper_CommonSpace;
+      border-right: 1px solid #fff;
+    }
+
+    .top-News_TableDate {
+      padding-left: $top-News_Wrapper_CommonSpace;
+    }
+
+    .top-News_TableContents {
+      padding-left: $top-News_Wrapper_CommonSpace;
+    }
+  }
+}
+
+.top-Company {
+  margin-bottom: 109px;
+}
+
+.top-Message, .top-Company {
+  position: relative;
+  margin-top: 150px;
+
+  .top-Message_Inner, .top-Company_Inner {
+    min-width: 1024px;
+    max-width: 1409px;
+    margin: 0 auto;
+
+    @extend .clearfix;
+
+    .top-Message_Img {
+      display: inline;
+      img {
+        position: relative;
+        z-index: $Z_TOP_IMG;
+        width: 64%;
+      }
+
+      &:before {
+        position: absolute;
+        z-index: $Z_TOP_YELLOW_BLOCK;
+        top: -30px;
+        right: 25%;
+        display: block;
+        width: 30%;
+        height: 300px;
+        content: "";
+        background-color: $Yellow;
+      }
+    }
+
+    .top-Company_Img {
+      display: inline;
+      float: right;
+      width: 65%;
+      text-align: right;
+      img {
+        position: relative;
+        z-index: $Z_TOP_IMG;
+        width: 100%;
+      }
+
+      &:before {
+        position: absolute;
+        z-index: $Z_TOP_YELLOW_BLOCK;
+        top: -30px;
+        left: 24%;
+        display: block;
+        width: 30%;
+        height: 300px;
+        content: "";
+        background-color: $Yellow;
+      }
+    }
+
+    .top-Message_TxtWrapper, .top-Company_TxtWrapper {
+      position: relative;
+      z-index: $Z_TOP_TXT_WRAPPER;
+
+      .top-Message_TtlWrapper, .top-Company_TtlWrapper {
+        margin-bottom: 50px;
+      }
+      .top-Message_SubTtlWrapper, .top-Company_SubTtlWrapper {
+        width: 310px;
+        margin-bottom: 19px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #001a89;
+      }
+      .top-Message_Txt, .top-Company_Txt {
+        margin-bottom: 48px;
+        font-size: 14px;
+        line-height: 2.5;
+        letter-spacing: 1px;
+      }
+    }
+
+    .top-Message_TxtWrapper {
+      float: right;
+      padding-right: 45px;
+    }
+
+    .top-Company_TxtWrapper {
+      padding-right: 30px;
+    }
+  }
+
+  .top-Message_Inner {
+    padding-left: 10px;
+  }
+
+  .top-Company_Inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Company {
+    margin-bottom: 50px;
+  }
+
+  .top-Message, .top-Company {
+    margin-top: 100px;
+
+    .top-Message_Inner, .top-Company_Inner {
+      width: 100%;
+      min-width: 300px;
+      max-width: 1024px;
+      padding: 0;
+      text-align: center;
+
+      .top-Message_Img {
+        position: relative;
+        display: inline-block;
+        padding-right: 0;
+        text-align: center;
+        img {
+          position: relative;
+          z-index: $Z_TOP_IMG;
+          width: 80%;
+        }
+
+        &:before {
+          position: absolute;
+          right: 0;
+          bottom: -40px;
+          display: block;
+          width: 80%;
+          height: 100%;
+          content: "";
+          background-color: $Yellow;
+        }
+      }
+
+      .top-Company_Img {
+        position: relative;
+        display: inline-block;
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        img {
+          position: relative;
+          z-index: $Z_TOP_IMG;
+          width: 80%;
+        }
+
+        &:before {
+          position: absolute;
+          bottom: -40px;
+          left: 0;
+          display: block;
+          width: 80%;
+          height: 100%;
+          content: "";
+          background-color: $Yellow;
+        }
+      }
+
+      .top-Message_YellowBlock, .top-Company_YellowBlock {
+        display: none;
+      }
+
+      .top-Message_TxtWrapper, .top-Company_TxtWrapper {
+        position: static;
+        z-index: $Z_TOP_TXT_WRAPPER;
+        float: none;
+        padding-top: 30px;
+        padding-right: 0;
+
+        .top-Message_TtlWrapper, .top-Company_TtlWrapper {
+          margin-bottom: 20px;
+        }
+        .top-Message_SubTtlWrapper, .top-Company_SubTtlWrapper {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 20px;
+          text-align: center;
+        }
+        .top-Message_Txt, .top-Company_Txt {
+          margin-bottom: 28px;
+          font-size: 14px;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Message, .top-Company {
+    margin-top: 60px;
+
+    .top-Message_Inner, .top-Company_Inner {
+      .top-Message_Img {
+        img {
+          width: 90%;
+        }
+
+        &:before {
+          top: 37px;
+        }
+      }
+
+      .top-Company_Img {
+        img {
+          width: 90%;
+        }
+
+        &:before {
+          top: 37px;
+        }
+      }
+
+      .top-Company_TxtWrapper {
+        padding-right: 0;
+      }
+
+      .top-Message_TxtWrapper, .top-Company_TxtWrapper {
+        position: relative;
+        padding-top: 20px;
+
+        .top-Message_TtlWrapper, .top-Company_TtlWrapper {
+          margin-bottom: -10px;
+          img {
+            width: 50%;
+          }
+        }
+        .top-Message_SubTtlWrapper, .top-Company_SubTtlWrapper {
+          margin-bottom: 10px;
+          font-size: 18px;
+        }
+        .top-Message_Txt, .top-Company_Txt {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.top-Interview {
+  position: relative;
+  //領域全体を覆う
+  height: 1122px;
+  background: url("../img/top/interview-bg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+
+  .top-Interview_Inner {
+    padding: 82px;
+
+    .top-Interview_TtlWrapper {
+      margin: 0 auto;
+      text-align: center;
+
+      .top-Interview_Ttl {
+        margin-bottom: 15px;
+      }
+
+      .top-Interview_SubTtl {
+        margin-bottom: 60px;
+        font-weight: 600;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .top-Interview_MemberWrapper {
+      position: relative;
+      min-width: 950px;
+      max-width: 1050px;
+      height: 306px;
+      margin: 0 auto;
+      margin-bottom: 70px;
+
+      @extend .clearfix;
+
+      .top-Interview_MemberLeft, .top-Interview_MemberRight {
+        a {
+          display: inline-block;
+          overflow: hidden;
+          width: 470px;
+          height: 306px;
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+            .i-down {
+              &.before {
+                right: -55px;
+                opacity: 1;
+              }
+              &.after {
+                right: -2px;
+                opacity: 1;
+              }
+            }
+          }
+          img {
+            transition: 0.7s ease;
+          }
+        }
+      }
+
+      .top-Interview_MemberLeft {
+        position: absolute;
+        left: 0;
+      }
+
+      .top-Interview_MemberRight {
+        position: absolute;
+        right: 0;
+        bottom: -85px;
+      }
+
+      .top-Interview_MemberName {
+        position: absolute;
+        z-index: $Z_MEMBER_NAME;
+        bottom: 111px;
+        left: -26px;
+        padding: 5px 12px;
+        font-size: 24px;
+        letter-spacing: 2.7px;
+        background-color: $Yellow;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .top-Interview_MemberTeam,
+      .top-Interview_MemberPosition,
+      .top-Interview_MemberDep {
+        position: absolute;
+        left: -26px;
+        display: inline;
+        padding: 5px 12px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: #fff;
+        background-color: $Blue;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .top-Interview_MemberDep {
+        bottom: $top-Interview_MemberTeam_Bottom;
+      }
+
+      .top-Interview_MemberTeam {
+        bottom: $top-Interview_MemberTeam_Bottom - 24px;
+      }
+
+      .top-Interview_MemberPosition {
+        bottom: $top-Interview_MemberTeam_Bottom - 48px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Interview {
+    position: relative;
+    //領域全体を覆う
+    height: 100%;
+    background: url("../img/top/interview-bg.png")no-repeat center top 0;
+    //fixedはスクロール時にレイヤーを感じさせるやつ
+    //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+    background-size: cover;
+
+    .top-Interview_Inner {
+      padding: 50px;
+
+      .top-Interview_TtlWrapper {
+        .top-Interview_Ttl {
+          margin-bottom: 15px;
+        }
+
+        .top-Interview_SubTtl {
+          margin-bottom: 60px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .top-Interview_MemberWrapper {
+        position: relative;
+        min-width: 567px;
+        max-width: 1024px;
+        height: 100%;
+        margin-bottom: 0;
+        text-align: center;
+
+        .top-Interview_MemberLeft {
+          position: relative;
+          max-width: 470px;
+          margin: 0 auto 90px;
+        }
+
+        .top-Interview_MemberRight {
+          position: relative;
+          bottom: 0;
+          max-width: 470px;
+          margin: 0 auto 90px;
+        }
+
+        .top-Interview_MemberName {
+          position: absolute;
+          bottom: 111px;
+          left: -26px;
+          padding: 5px 12px;
+          font-size: 24px;
+          letter-spacing: 2.7px;
+          background-color: $Yellow;
+        }
+
+        .top-Interview_MemberTeam,
+        .top-Interview_MemberPosition
+        .top-Interview_MemberDep {
+          position: absolute;
+          left: -26px;
+          display: inline;
+          padding: 5px 12px;
+          font-size: 13px;
+          letter-spacing: 2px;
+          color: #fff;
+          background-color: $Blue;
+        }
+
+        .top-Interview_MemberDep {
+          bottom: $top-Interview_MemberTeam_Bottom;
+        }
+
+        .top-Interview_MemberTeam {
+          bottom: $top-Interview_MemberTeam_Bottom -24;
+        }
+
+        .top-Interview_MemberPosition {
+          bottom: $top-Interview_MemberTeam_Bottom - 48;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-Interview {
+    .top-Interview_Inner {
+      padding: 40px;
+
+      .top-Interview_TtlWrapper {
+        .top-Interview_Ttl {
+          img {
+            width: 60%;
+          }
+        }
+
+        .top-Interview_SubTtl {
+          margin-bottom: 12px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .top-Interview_MemberWrapper {
+        min-width: 278px;
+
+        .top-Interview_MemberLeft {
+          margin: 0 auto 45px;
+          a {
+            width: 100%;
+            height: auto;
+          }
+          img {
+            width: 90%;
+          }
+        }
+
+        .top-Interview_MemberRight {
+          margin: 0 auto 45px;
+          a {
+            width: 100%;
+            height: auto;
+          }
+          img {
+            width: 90%;
+          }
+        }
+
+        .top-Interview_MemberName {
+          bottom: 151px - $top-Interview_MemberTeam_Bottom_SP;
+          left: -20px;
+          padding: 3px 10px;
+          font-size: 16px;
+          letter-spacing: 1.0px;
+        }
+
+        .top-Interview_MemberDep,
+        .top-Interview_MemberTeam,
+        .top-Interview_MemberPosition {
+          left: -20px;
+          padding: 4px 6px;
+          font-size: 11px;
+          letter-spacing: 1px;
+        }
+
+        .top-Interview_MemberDep {
+          bottom: $top-Interview_MemberTeam_Bottom - $top-Interview_MemberTeam_Bottom_SP + 48;
+        }
+
+        .top-Interview_MemberTeam {
+          bottom: $top-Interview_MemberTeam_Bottom - $top-Interview_MemberTeam_Bottom_SP + 24;
+        }
+
+        .top-Interview_MemberPosition {
+          bottom: $top-Interview_MemberTeam_Bottom - $top-Interview_MemberTeam_Bottom_SP;
+        }
+      }
+    }
+  }
+}
+
+.top-About {
+  .top-About_Inner {
+    padding: 82px 42px 77px;
+    text-align: center;
+
+    .top-About_TtlWrapper {
+      min-width: 880px;
+      text-align: center;
+
+      .top-About_Ttl {
+        margin-bottom: 15px;
+      }
+
+      .top-About_SubTtl {
+        margin-bottom: 46px;
+        font-weight: 600;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .top-About_BtbWrapper {
+      min-width: 880px;
+      padding-left: 0;
+      .btn {
+        display: inline-block;
+        width: 270px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-About {
+    .top-About_Inner {
+      padding: 82px 42px 77px;
+      text-align: center;
+
+      .top-About_TtlWrapper {
+        min-width: 100%;
+        text-align: center;
+
+        .top-About_Ttl {
+          margin-bottom: 15px;
+        }
+
+        .top-About_SubTtl {
+          margin-bottom: 46px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .top-About_BtbWrapper {
+        min-width: 100%;
+        .btn {
+          display: block;
+          width: 60%;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .top-About {
+    .top-About_Inner {
+      padding: 58px 42px 49px;
+      text-align: center;
+
+      .top-About_TtlWrapper {
+        min-width: 100%;
+        text-align: center;
+
+        .top-About_Ttl {
+          margin-bottom: -10px;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .top-About_SubTtl {
+          margin-bottom: 25px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .top-About_BtbWrapper {
+        min-width: 100%;
+        .btn {
+          display: block;
+          width: 80%;
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+}
+
+.top-Mv_Img {
+  img{
+    transition: 0.9s;
+    opacity: 0;
+  }
+}
+img.slide_img1{
+  opacity: 1;
+}

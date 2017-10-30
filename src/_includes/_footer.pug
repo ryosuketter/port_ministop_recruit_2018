@@ -1,0 +1,125 @@
+// footer
+mixin footer(path)
+  .js-Slide_Contents
+    .st-Entry
+      .st-Entry_Inner
+        .st-Entry_TtlWrapper
+          .st-Entry_Ttl
+            h2
+              img(src=path + 'assets/img/top/entry-ttl.png', alt='タイトル エントリー')
+          .st-Entry_SubTtl
+            p エントリー
+        .st-Entry_BtbWrapper
+          .btn.btn-Yellow
+            a(href='https://job.rikunabi.com/2019/company/r758600062/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'fresher_ft');") フレッシャーズ採用
+              include _external_link
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+          .btn.btn-Yellow
+            a(href=path + 'information/recruit.html#career', onclick="ga('send', 'event', 'internal_link', 'click', 'career_ft');") キャリア採用
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+          .btn.btn-Yellow
+            a(href=path + 'information/recruit.html#handi', onclick="ga('send', 'event', 'internal_link', 'click', 'handi_ft');") 障がい者採用
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+          .btn.btn-Yellow
+            a(href='https://job.rikunabi.com/2019/company/r758600062/internship/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'internship_ft');") インターンシップ
+              include _external_link
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+          .btn.btn-Yellow
+            a(href='https://ministop-arbeit.jp/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'parttime_ft');") アルバイト採用
+              include _external_link
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+          .btn.btn-Yellow
+            a(href='https://www.ministop-baitern.com/' target="_blank", onclick="ga('send', 'event', 'external_link', 'click', 'baitern_ft');") バイターン採用
+              include _external_link
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+          .btn.btn-Yellow
+            a(href=path + 'information/recruit.html#contractor', onclick="ga('send', 'event', 'internal_link', 'click', 'contractor_ft');") 契約社員募集(開店アシスタント）
+            .button-Slide_Yellow
+              span.button-Cover
+                span.i.i-down.before
+                span.i.i-down.after
+
+    footer.st-Footer
+      .st-Footer_WrapperTop
+        .st-Footer_TableWrapper
+          table.st-Footer_Table
+            tr.st-Footer_Tr
+              th.st-Footer_Th メッセージ
+              th.st-Footer_Th 会社を知る
+              th.st-Footer_Th 社員インタビュー
+              th.st-Footer_Th 制度・採用情報
+            tr.st-Footer_Tr
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'message/concept.html') コンセプトメッセージ
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'aboutus/features.html') ミニストップの特長
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'interview/index.html') 一覧で見る
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'information/welfare.html') 制度紹介
+            tr.st-Footer_Tr
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'message/recruit.html') 採用担当より
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'aboutus/company.html') 会社概要
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'interview/01.html') #{ootsuka}
+              td.st-Footer_Td
+                a.animsition-link(href=path + 'information/recruit.html') 採用情報
+            tr.st-Footer_Tr
+              td
+              td
+              td.st-Footer_Td
+                a(href=path + 'interview/02.html') #{inoue}
+              td
+            tr.st-Footer_Tr
+              td
+              td
+              td.st-Footer_Td
+                a(href=path + 'interview/03.html') #{noguchi}
+              td
+            tr.st-Footer_Tr
+              td
+              td
+              //- td.st-Footer_Td
+              //-   a(href='interview/04.html') #{sakurai}
+              td
+              td
+          .st-Footer_LogoEntry
+            .st-Footer_LogoWrapper
+              a.animsition-link(href=path)
+                img(src=path + '/assets/img/footer/footer-logo.png', alt='ミニストップ ロゴ')
+            .btn_EntryWrapper
+              a.animsition-link.btn_Entry(href=path + 'information/recruit.html', onclick="ga('send', 'event', 'internal_link', 'click', 'entry_ft');") ENTRY
+      .st-Footer_WrapperBottom
+        .st-Footer_Totop
+          a(href='http://www.ministop.co.jp/' target="_blank") 総合トップへ
+            include _external_link
+        .st-Footer_Sns
+          p Share
+          a(href='https://twitter.com/share?url=http://www.ministop.co.jp/corporate/recruit/index.html&text=ミニストップ株式会社の総合採用サイト', data-dnt='true', target="_blank")
+            i.fa.fa-twitter(aria-hidden='true')
+          a(href='https://www.facebook.com/sharer/sharer.php?u=http://www.ministop.co.jp/corporate/recruit/index.html' target="_blank")
+            i.fa.fa-facebook-square(aria-hidden='true')
+
+    //- .copyright
+    //-   p Copyright © MINISTOP. All rights reserved.
+// /footer

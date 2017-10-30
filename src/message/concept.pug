@@ -1,0 +1,70 @@
+extend /_includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "コンセプトメッセージ｜ミニストップ｜採用サイト";
+  - var pageDescription= "コンセプトメッセージはこちらです。ミニストップ株式会社の採用サイトです。採用担当者からのメッセージ、ミニストップの特長、会社概要、社員インタビュー、研修制度、採用情報などをご紹介しています。";
+  - var pageKeywords= "コンセプトメッセージ,ミニストップ,採用サイト";
+  //- Optional
+  - var pageOgpTitle= "コンセプトメッセージ｜ミニストップ｜採用サイト";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "message/concept.html";
+
+block content
+  // contents
+  .cncpt-Wrapper
+    .cncpt-Mv
+      .cncpt-Mv_Inner
+        .cncpt-Mv_Ttl
+          h1
+            img(src='../assets/img/message/mv-ttl.png', alt='タイトル メッセージ')
+        .cncpt-Mv_Subttl
+          p コンセプトメッセージ
+    .cncpt-Contents
+      .cncpt-Contents_Inner
+        .cncpt-Contents_TxtWrapper.clearfix
+          .cncpt-Contents_TxtInner
+            .cncpt-Contents_Ttl
+              h2
+                | 何気ない「毎日」
+                br
+                | にこそ、こだわりを。
+            .cncpt-Contents_Body
+              p 朝起きてから、夜眠るまで。<br class="add-Line">学校にいく。会社にいく。子育てをする。<br class="add-Line">当たり前の「毎日」。何気ない「毎日」。<br class="add-Line">そんな「毎日」の中に、ミニストップはいます。
+            .cncpt-Contents_Body
+              p でも、だからこそ<br>細部までこだわり抜いたサービスを提供したい。
+            .cncpt-Contents_Body
+              p いつも、できたてのおいしさが食べられる。<br class="add-Line">くつろげる空間が、そこにある。<br class="add-Line">お客さまの「毎日」を想像しながら<br class="add-Line">そんな当たり前を、私たちはつくっています。
+            .cncpt-Contents_Body
+              p お客さまの暮らしの一部として<br>ミニストップは、これからも挑戦し続けます。
+        .cncpt-Contents_ImgWrapper
+          .cncpt-Contents_ImgFaceWrapper
+            img(src='../assets/img/message/cncpt-contents_imgface.png', alt='飲み物を選んでいる女性')
+          .cncpt-Contents_ImgTreeWrapper
+            img(src='../assets/img/message/cncpt-contents_imgtree.png', alt='森林')
+    .cncpt-Img_TableWrapper
+      .cncpt-Img_TableInner
+        img(src='../assets/img/message/cncpt-imgtable.png', alt='料理がたくさんある食卓')
+  .link-Wrapper
+    .link-Inner
+      .link-Left
+        a.animsition-link(href='../')
+          .link-Left_SubTtl
+            p Prev
+          .link-Left_Ttl
+            p TOPページ
+          .link-Left_TtlSp
+            p 戻る
+      .link-Right
+        a.animsition-link(href='./recruit.html')
+          .link-Right_SubTtl
+            p Next
+          .link-Right_Ttl
+            p 採用担当より
+  .page-Top_Wrapper
+    button.page-Top_WrapperBtn(type='button')
+      span.label PAGE TOP
+  // /contents
+
+  <script type="text/javascript">mixpanel.track("message/concept");</script>

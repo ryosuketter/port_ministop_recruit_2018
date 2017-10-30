@@ -1,0 +1,48 @@
+// ==========================================================================
+// settings
+// ==========================================================================
+@import "./settings/_variables.scss";
+@import "./settings/_zindex.scss";
+
+// ==========================================================================
+// tools
+// ==========================================================================
+// @import "../../../assets/scss/tools/functions/**";
+@import "./tools/mixins/_rem.scss";
+@import "./tools/mixins/_margin.scss";
+@import "./tools/mixins/_mediaqueries.scss";
+
+// ==========================================================================
+// base（基本normalize.css）
+// ==========================================================================
+@import "./base/_normalize.scss";
+
+// ==========================================================================
+// contents（よく使うコンポーネントと各カテゴリーごとにファイルをつくる）
+// ==========================================================================
+@import "./contents/_button.scss";
+@import "./contents/_link.scss";
+@import "./contents/_page_top.scss";
+@import "./contents/_top.scss";
+@import "./contents/message/_concept.scss";
+@import "./contents/message/_recruit.scss";
+@import "./contents/aboutus/_company.scss";
+@import "./contents/aboutus/_features.scss";
+@import "./contents/interview/_interview.scss";
+@import "./contents/interview/_interview_detail.scss";
+@import "./contents/information/_welfare.scss";
+@import "./contents/information/_recruit.scss";
+
+// ==========================================================================
+// structures（共通部分の定義）
+// ==========================================================================
+@import "./structures/_sp_header_nav.scss";
+@import "./structures/_entry.scss";
+@import "./structures/_header.scss";
+@import "./structures/_footer.scss";
+
+// ==========================================================================
+// vendor（DLして使うファイルとか）
+// ==========================================================================
+@import "./vendor/animate.scss";
+@import "./vendor/_animsition.min.scss";

@@ -1,0 +1,61 @@
+// _sp_header_nav
+mixin sp_header_nav(path)
+  #menu_btn.menu-btn
+    .menu-btn-wrapper
+      span.top
+      span.mid
+      span.btm
+  #menu.menu
+    ul
+      li.menu_Link.appear01
+        a(href=path) TOPページ
+      li
+        ul
+          li.menu_Ttl.appear02 メッセージ
+          li.menu_Link.appear03
+            a(href=path + 'message/concept.html') コンセプトメッセージ
+          li.menu_Link.appear04
+            a(href=path + 'message/recruit.html') 採用担当より
+      li
+        ul
+          li.menu_Ttl.appear05 会社を知る
+          li.menu_Link.appear06
+            a(href=path + 'aboutus/features.html') ミニストップの特長
+          li.menu_Link.appear07
+            a(href=path + 'aboutus/company.html') 会社概要
+      li
+        ul
+          li.menu_Ttl.appear08 社員インタビュー
+          li.menu_Link.appear09
+            a(href=path + 'interview/index.html') 一覧で見る
+          li.menu_Link.appear10
+            a(href=path + 'interview/01.html') #{ootsuka}
+              br
+              |
+              span #{ootsuka_position_sp}
+          li.menu_Link.appear11
+            a(href=path + 'interview/02.html') #{inoue}
+              br
+              |
+              span #{inoue_position_sp}
+          li.menu_Link.appear12
+            a(href=path + 'interview/03.html') #{noguchi}
+              br
+              |
+              span #{noguchi_position_sp}
+          //- li.menu_Link.appear13
+          //-   a(href=path + 'interview/04.html') #{sakurai}
+          //-     br
+          //-     |
+          //-     span #{sakurai_position}
+      li
+        ul
+          li.menu_Ttl.appear14 制度・採用情報
+          li.menu_Link.appear15
+            a(href=path + 'information/welfare.html') 制度紹介
+          li.menu_Link.appear16
+            a(href=path + 'information/recruit.html') 採用情報
+        li.menu_Entry.appear17
+          a(href=path + 'information/recruit.html', onclick="ga('send', 'event', 'internal_link', 'click', 'entry_hd_SP');") ENTRY
+  #menu_overlay.menu-overlay
+// /_sp_header_nav
