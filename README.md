@@ -2,6 +2,8 @@
 
 <img src="./dest/assets/img/ogp.png" height="300">
 
+https://ryosuketter.github.io/port_ministop_recruit_2018/dest/index.html
+
 ## CSS設計は基本、Enduring CSSを採用
 本案件では、最低限の共通部分は抽象化や共通化させているが、それ以外はeCSSで、なるべく「分けて」管理することで運用の負荷を下げるというアプローチを取ります。
 
