@@ -4,7 +4,7 @@
 
 https://ryosuketter.github.io/port_ministop_recruit_2018/dest/index.html
 
-## Production Time
+## 期間
 
 2017-05-08 〜 2017-07-31
 
@@ -19,6 +19,7 @@ Enduring CSSとは
 PC
 * IE = 11以上
 * firefox, Safari, Chrome = 最新版
+
 SP
 * iOS = 8以上
 * Android(chrome & firefox)
