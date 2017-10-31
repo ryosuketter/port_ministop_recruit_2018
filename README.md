@@ -8,7 +8,7 @@ https://ryosuketter.github.io/port_ministop_recruit_2018/dest/index.html
 
 2017-05-08 〜 2017-07-31
 
-## 開発環境
+## 開発環境など
 
 - [pug](https://pugjs.org/api/getting-started.html) -> HTML
 - sass -> CSS
